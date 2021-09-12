@@ -1,0 +1,174 @@
+.footer{
+    width: 100%;
+    height: 410px;
+    background: #2d2621;
+    padding: 45px 0 0;
+}
+.row{
+    margin-left: -50px;
+}
+.footer h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.footer ul {
+    padding: 0;
+    padding-top: 25px;
+}
+.footer ul li {
+    color: #8b8e96;
+    line-height: 24px;
+    font-size: 14px;
+}
+.social p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.social-button {
+    display: inline-block;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    margin-right: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: .99;
+    border-radius: 40px;
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button i {
+    font-size: 18px;
+    vertical-align: middle;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button.youtube i {
+    color: #DC4A38;
+}
+.social-button.instagram i {
+    color: #3CF;
+}
+.footer ul li a {
+    color: #8b8e96;
+    font-size: 14px;
+}
+.footer .copyright {
+    color: #8b8e96;
+    font-size: 13px;
+}
+.footer .copyright .inner {
+    border-top: solid 1px #373a43;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.footer .copyright a {
+    color: #fff;
+    font-size: 13px;
+}
+.footer .copyright ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+.footer .copyright ul li {
+    margin-left: 20px;
+}
+.footer .copyright ul li a {
+    color: #8b8e96;
+    font-size: 13px;
+}
+.backtop.show {
+    opacity: 1 !important;
+}
+.list-menu li:hover a{
+    color: #ff3900;
+    text-decoration: none;
+}
+.wsp a:hover{
+    color: #ff3900;
+    text-decoration: none;
+}
+.col-lg-6 a:hover{
+    color: #ff3900;
+    text-decoration: none;
+}
+
+
+
+#tnContact {
+    max-width: 230px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    left: 1450px;
+    z-index: 10;
+}
+#tnContact li {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+#tnContact li a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 99px;
+    align-items: center;
+    justify-content: center;
+}
+#tnContact li a i {
+    font-size: 18px;
+    color: #fff;
+}
+#tnContact li .label {
+    position: relative;
+    visibility: hidden;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 0 99px 99px 0;
+}
+#tnContact li .iconzalo img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.iconfb, .label.fb {
+    background: #3b5999;
+}
+.iconzalo, .label.zalo {
+    background: #008df2;
+}
+.iconsms, .label.sms {
+    background: #00c300;
+}
+.iconcall, .label.call {
+    background: #383838;
+    animation: ld-jingle 0.8s linear infinite;
+}
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+}
