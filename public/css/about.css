@@ -16,6 +16,7 @@ html{
     font-family: "Roboto",sans-serif;
 }
 
+/*---------------HEADER---------------*/
 .header{
     width: 100%;
     height: 90px;
@@ -328,23 +329,23 @@ a, .text-link {
 }
 .battrang .icon2{
     position: relative;
-    left: 31px;
+    left: 130px;
 }
 .tranh .icon2{
     position: relative;
-    left: 50px;
+    left: 90px;
 }
 .mohinh .icon2{
     position: relative;
-    left: 98px;
+    left: 57px;
 }
 .lua .icon2{
     position: relative;
-    left: 84px;
+    left: 60px;
 }
 .dong .icon2{
     position: relative;
-    left: 66px;
+    left: 105px;
 }
 .subnav1 li{
     position: relative;
@@ -480,6 +481,7 @@ a, .text-link {
     top: -90px;
 }
 
+
 /*--------MAIN----------*/
 .main{
     width: 100%;
@@ -573,7 +575,7 @@ a, .text-link {
 .sanpham_box_con3{
     width: 561px;
     height: 285px;
-    background-image: url("https://lh3.googleusercontent.com/proxy/ohNvBOt9hiTtvOURAFcXKx46Pr1GLDyaw7MgObRYq0owqWmk0yWSk2DzRBkiQ1WhNyEBdr4QwxVlZksdo-pIwN_czlSjh5XozDSvy47CGjxp8r0");
+    background-image: url("https://congthuong.vn/stores/news_dataimages/hainam/122019/20/14/in_article/5847_anh_dieu_khac_go.jpg");
     background-size: cover;
     position: relative;
     top: -20px;
@@ -806,13 +808,12 @@ a, .text-link {
 
 
 
-/*--------FOOTER-----------*/
-.footer{
-    width: 100%;
-    height: 410px;
-    background: #2d2621;
-    padding: 45px 0 0;
-}
+/*--------FOOTER-----------*/.footer{
+                                 width: 100%;
+                                 height: 410px;
+                                 background: #2d2621;
+                                 padding: 45px 0 0;
+                             }
 .row{
     margin-left: -50px;
 }
@@ -974,4 +975,10 @@ a, .text-link {
 .iconcall, .label.call {
     background: #383838;
     animation: ld-jingle 0.8s linear infinite;
+}
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
 }
