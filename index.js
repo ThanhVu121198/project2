@@ -32,4 +32,8 @@ app.get("/video2",function (req,res) {
 app.get("/video3",function (req,res) {
     res.render("video3");
 });
+app.get("/video4",function (req,res) {
+    res.render("video4");
+});
+
 
