@@ -488,7 +488,14 @@ a, .text-link {
     position: relative;
     top: -90px;
 }
-
+.slider_main{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 /*---------------Mobile--------------*/
 @keyframes fadeIn {
     from{
