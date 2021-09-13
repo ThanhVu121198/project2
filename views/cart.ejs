@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Cart.css">
+</head>
+<body>
+<!-------------HEADER-------------->
+<%- include("header")%>
+
+<%- include("nav")%>
+<div class="slider">
+
+</div>
+<div class="main" style="background-image: url('https://mynghesenviet.vn/wp-content/uploads/2019/12/bg3@2x.jpg');">
+    <div class="bread-crumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 a-left">
+                    <ul class="breadcrumb" style="background-image: url('https://mynghesenviet.vn/wp-content/uploads/2019/12/bg3@2x.jpg');">
+                        <li class="home">
+                            <a href="#"><span>Home</span></a>
+                            <span class="g">/</span>
+                        </li>
+                        <li>
+                            <strong><span>Cart</span></strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-cart-gage">
+        <div class="container">
+            <div class="header-cart">
+                <div class="title-cart">
+                    <h1>YOUR CART</h1>
+                </div>
+            </div>
+            <div class="cart-page">
+                <div class="form-cart">
+                    <div class="cart-header">
+                        <div>Product information</div>
+                        <div>Unit price</div>
+                        <div>Quantity</div>
+                        <div>Into money</div>
+                    </div>
+                    <div class="cart-body">
+                        <div class="cart-row">
+                            <div class="cart-flex">
+                                <a href="#" class="cart-img">
+                                    <img src="https://bizweb.dktcdn.net/thumb/compact/100/434/926/products/pc-ao-thun-unisex-human-nature-round-square-t-shirt-relaxed-form-large-1608542104-4159.jpg">
+                                </a>
+                                <div class="cart-info">
+                                    <div class="cart-name">
+                                        <a href="#" class="cart-name-product">Unisex T-shirt</a>
+                                        <span class="product-size">M</span>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="grid-item">
+                                            <span class="cart-price">120.000 USD</span>
+                                        </div>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="grid-item">
+                                            <div class="input-btn">
+                                                <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus items-count" data-id="" data-qty="0" data-line="1" aria-label="-">
+                                                    -
+                                                </button>
+                                                <input type="text" name="updates[]" class="ajaxcart__qty-num number-sidebar" maxlength="3" value="1" min="0" data-id="" data-line="1" aria-label="quantity" pattern="[0-9]*">
+                                                <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus items-count" data-id="" data-line="1" data-qty="2" aria-label="+">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="grid-item">
+                                            <span class="cart-price">120.000₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 offset-md-8 offset-lg-8 offset-xl-8">
+                                <div class="ajaxcart-subtotal">
+                                    <div class="cart-subtotal">
+                                        <div class="cart-col-6">Total amount:</div>
+                                        <div class=" text-right cart-totle"><span class="total-price">240.000₫</span></div>
+                                    </div>
+                                </div>
+                                <div class="cart-button">
+                                    <button type="button" class="btn-default" title="Pay">Pay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("footer")%>
+
+
+</body>
+</html>

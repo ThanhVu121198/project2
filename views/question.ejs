@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>question</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/question.css" type="text/css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4/css/all.css">
+</head>
+<body>
+<!-------------HEADER-------------->
+<%- include("header")%>
+<%- include("nav")%>
+<!-------------MAIN------------->
+<main class="main">
+    <link href="//bizweb.dktcdn.net/100/434/926/themes/832778/assets/page-question.scss.css?1630049520862" rel="stylesheet" type="text/css">
+    <section class="bread-crumb">
+        <div class="container">
+            <div class="row">
+                <div  class="col-md-12 left">
+                    <ul  class="breadcrumb">
+                        <li class="home">
+                            <a href="/"><span>Home</span></a>
+                        </li>
+                        <li>
+                            <strong style="color: #ff3900"><span>Question</span></strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page">
+        <div class="container">
+            <div class="question-page padding-top-15 margin-bottom-40">
+                <div class="row">
+                    <div class="title col-md-12">
+                        <h1><a href="#">FAQ ???</a> </h1>
+                    </div>
+                    <div class="content-page rte">
+                        <h4 class="active">
+                            1. Do you have any pictures of products?
+                        </h4>
+                        <p class="show">
+                            "Yes,we  do. The pictures will be add with the name of product on the website"
+                        </p>
+                        <h4>2.&nbsp;&nbsp;How long time have to wait for ordering?</h4>
+                        <p>"Hi guys, we need to take 3 -5 business days from the date of your order"</p>
+                        <h4>3.&nbsp;&nbsp;Do the company have any guarantees?</h4>
+                        <p>"Of course we do. If the product have  any issue because of the company's manufacturer, we will change the new one for the customers"</p>
+                        <h4>4.&nbsp;&nbsp;How long is the product return or exchange period??</h4>
+                        <p>"Hi guys,you need to return or exchange the product in 7  days from the date when you receipt"</p>
+                        <h4>5.&nbsp;&nbsp;Direct exchange at which store??</h4>
+                        <p>"Hi guys, the Company applies direct exchange throughout the store system!"</p>
+                        <h4>6.&nbsp;&nbsp;Is it possible to change the shipping address after placing an order?</h4>
+                        <p>"Yes, you are. Please contact to customer services as soon as possible for changing. Thank you!"</p>
+                        <h4>7.&nbsp;&nbsp;How can we contact to direct customer services of the company?</h4>
+                        <p>"Hi guys, you can contact direct to operator of the company by phone number: 1900 6565!"</p>
+                        <h4>8.&nbsp;&nbsp;WHat time of opening store?</h4>
+                        <p>"Hi guys, the Company open from 8a.m to 9p.m"</p>
+                        <h4>9.&nbsp;&nbsp;What kind of transportation methods?</h4>
+                        <p>"Hi guys, the Company will be send by Economical Delivery copmany "</p>
+                        <h4>10.&nbsp;&nbsp;Is a deposit required before delivery??</h4>
+                        <p>"Hi guys, Customers only need to deposit 30% with pre-ordered orders. With available items, no deposit is required"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript"  src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.question-page').on('click','h4', function () {
+            $('.question-page h4').removeClass('active');
+            $('.question-page p').removeClass('show');
+            $(this).toggleClass('active').next('p').toggleClass('show');
+        })
+    </script>
+</main>
+<div class="icontact">
+    <ul id = "tncontact">
+        <li>
+            <a target="_blank" href="https://www.facebook.com/chauau.chinh.hang.91" class="iconfb">
+                <img src="https://cdn2.iconfinder.com/data/icons/social-media-2189/48/1-Facebook-128.png" height="30" width="30" alt="fb">
+            </a>
+            <span  class="label fb">
+                ::before
+                "Chat Facebook"
+            </span>
+        </li>
+        <li>
+            <a target="_blank" href="https://zalo.me/g/pqhtux186" class="iconzalo">
+                <img src="//bizweb.dktcdn.net/thumb/icon/100/434/926/themes/832778/assets/icon_zalomessage.png?1630049520862" alt="zalo">
+            </a>
+            <span  class="label zalo">
+                ::before
+                "Connect us by Zalo"
+            </span>
+        </li>
+        <li>
+            <a target="_blank" href="tel:19006765" class="iconcall">
+                <img src="https://cdn3.iconfinder.com/data/icons/social-round-corner/512/viber_social__media_logo-128.png" height="30" width="30" alt="sms">
+            </a>
+            <span  class="label sms">
+                ::before
+                "Call us directly"
+            </span>
+        </li>
+    </ul>
+</div>
+<%- include("footer")%>
+</body>
+</html>
