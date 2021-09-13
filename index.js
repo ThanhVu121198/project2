@@ -14,3 +14,6 @@ app.get("/home",function (req,res) {
 app.get("/about",function (req,res) {
     res.render("about");
 });
+app.get("/hoptrangsuc",function (req,res) {
+    res.render("hoptrangsuc");
+});
