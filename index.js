@@ -11,29 +11,9 @@ app.set("view engine","ejs");
 app.get("/home",function (req,res) {
     res.render("home");
 });
-
 app.get("/about",function (req,res) {
     res.render("about");
 });
-
-//------------ TRANG--------------//
-app.get("/question",function (req,res) {
-    res.render("question");
+app.get("/hoptrangsuc",function (req,res) {
+    res.render("hoptrangsuc");
 });
-app.get("/video",function (req,res) {
-    res.render("video");
-});
-app.get("/video1",function (req,res) {
-    res.render("video1");
-});
-app.get("/video2",function (req,res) {
-    res.render("video2");
-});
-app.get("/video3",function (req,res) {
-    res.render("video3");
-});
-app.get("/video4",function (req,res) {
-    res.render("video4");
-});
-
-

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/buys.css">
+</head>
+<body>
+<!-------------HEADER-------------->
+<div class="header">
+    <%- include("header")%>
+    <%- include("nav")%>
+</div>
+<div class="slider_main" style="width: 100% ;height: 400px;background-image: url('http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-1.jpg');float: left;margin-top: 30px ">
+
+</div>
+<div class="container">
+    <div class="main">
+        <div class="buys_main">
+            <div class="buys_left">
+                <figure><img src="https://vn-test-11.slatic.net/p/c8ff34ab0ea1ab46014b494737cd22bd.jpg"></figure>
+            </div>
+            <div class="buys_right">
+                <h3><b class="buys_name">dragonfly painted green enamel</b></h3>
+                <div class="heat_like">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h4 class="buys_brand">Brand:bat trang</h4>
+                <div class="price">
+                    <h2 class="now_price">Price:1000.000đ</h2>
+                    <h5 class="old_price">1000.000đ</h5>
+                </div>
+                <div class="box_number">
+                    <div class="left_input"><h3><i\>quantity :</i></h3></div>
+                    <div class="input_box">
+                        <form class="input_number" name="f1">
+                            <input class="button_dow" type='button' name='subtract' onclick='javascript: subtractQty();' value='-'/>
+                            <input class="input" type='text' value="0" placeholder="0" name='qty' id='qty' />
+                            <input class="button_up" type='button' name='add' onclick='javascript: document.getElementById("qty").value++;' value='+'/>
+                        </form>
+                    </div>
+                </div>
+                <div class="button_buy">
+                    <button class="add_to_cart"> Add To Cart</button>
+                    <button class="buy_now-buy"> Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <!-- Nav tabs -->
+            <ul class="nav  nav-tabs" role="tablist" style="padding:2px">
+                <li role="presentation" class="active"><a href="#over" aria-controls="home" role="tab" data-toggle="tab">product information</a></li>
+                <li role="presentation"><a href="#course" aria-controls="course" role="tab" data-toggle="tab">shopping guide</a></li>
+                <li role="presentation"><a href="#carrers" aria-controls="carrers" role="tab" data-toggle="tab">Please submit review</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="over">
+                    <h4>product information:</h4>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="course">
+                    <h4>Step 1: Find products to buy You can visit the website to find and select the products you want to buy in many ways:</h4>
+                    <p> + Use the search box above, type the name of the product you want to buy (you can search for a specific product, search by brand...). The website will give you the correct suggestions to choose from:</p>
+                    <h4> Step 2: Order products After choosing the product you want to buy, you proceed to place an order by:</h4>
+                    + Select the BUY NOW button if you want to pay the full price of the product
+                    + Fill in the purchase information according to the steps on the website, then choose the delivery method is delivery or go to the supermarket to pick up the goods, choose the payment method is pay on receipt or pay online (by ATM card, VISA or MasterCard) and complete the order.
+                    <p><b>note:</b>
+                        <i>1. We only accept orders when providing accurate information about address, phone number. After you place an order, we will contact you again to check the information and agree more related things.
+                            2. Some sensitive cases: the order value is too large & delivery time in the evening delivery address in the alley or may lead to danger. We will actively contact you to agree on a specific delivery time.
+                        </i> </p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="carrers">
+                    <div class="cmt">
+                        <h4>comment:</h4>
+                        <textarea style="width: 99%" class="form-control" rows="3"></textarea>
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="hot_link">
+            <h3>hot products</h3>
+            <div class="box_content">
+                <div class="box_column">
+                    <a href="#"><div class="image_box">
+                            <figure><img src="https://vn-test-11.slatic.net/p/c8ff34ab0ea1ab46014b494737cd22bd.jpg" width="299" height="300"></figure>
+                            <div class="name_product">
+                                <h5>EGO WEAR</h5>
+                                <h4>TEAPOT SET HOA BAC AU</h4>
+                                <div class="gia">
+                                    399.000đ
+                                </div>
+                                <div class="gia2">
+                                    460.000đ
+                                </div>
+                            </div>
+                            <button class="heat">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <i class="fas fa-shopping-basket"> +1</i>
+                            </button>
+                            <button class="buy_now">
+                                <i class="fas fa-shopping-basket"> Buy Now</i>
+                            </button>
+                        </div></a>
+                </div>
+                <div class="box_column">
+                    <a href="#"><div class="image_box">
+                            <figure><img src="https://vn-test-11.slatic.net/p/c8ff34ab0ea1ab46014b494737cd22bd.jpg" width="299" height="300"></figure>
+                            <div class="name_product">
+                                <h5>EGO WEAR</h5>
+                                <h4>TEAPOT SET HOA BAC AU</h4>
+                                <div class="gia">
+                                    399.000đ
+                                </div>
+                                <div class="gia2">
+                                    460.000đ
+                                </div>
+                            </div>
+                            <button class="heat">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <i class="fas fa-shopping-basket"> +1</i>
+                            </button>
+                            <button class="buy_now">
+                                <i class="fas fa-shopping-basket"> Buy Now</i>
+                            </button>
+                        </div></a>
+                </div>
+                <div class="box_column">
+                    <a href="#"><div class="image_box">
+                            <figure><img src="https://vn-test-11.slatic.net/p/c8ff34ab0ea1ab46014b494737cd22bd.jpg" width="299" height="300"></figure>
+                            <div class="name_product">
+                                <h5>EGO WEAR</h5>
+                                <h4>TEAPOT SET HOA BAC AU</h4>
+                                <div class="gia">
+                                    399.000đ
+                                </div>
+                                <div class="gia2">
+                                    460.000đ
+                                </div>
+                            </div>
+                            <button class="heat">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <i class="fas fa-shopping-basket"> +1</i>
+                            </button>
+                            <button class="buy_now">
+                                <i class="fas fa-shopping-basket"> Buy Now</i>
+                            </button>
+                        </div></a>
+                </div>
+                <div class="box_column">
+                    <a href="#"><div class="image_box">
+                            <figure><img src="https://vn-test-11.slatic.net/p/c8ff34ab0ea1ab46014b494737cd22bd.jpg" width="299" height="300"></figure>
+                            <div class="name_product">
+                                <h5>EGO WEAR</h5>
+                                <h4>TEAPOT SET HOA BAC AU</h4>
+                                <div class="gia">
+                                    399.000đ
+                                </div>
+                                <div class="gia2">
+                                    460.000đ
+                                </div>
+                            </div>
+                            <button class="heat">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <i class="fas fa-shopping-basket"> +1</i>
+                            </button>
+                            <button class="buy_now">
+                                <i class="fas fa-shopping-basket"> Buy Now</i>
+                            </button>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+        <%- include("footer")%>
+    </div>
+
+<script type="text/javascript" src="js/tabs.js"></script>
+<script type="text/javascript">
+    function subtractQty(){
+        if(document.getElementById("qty").value - 1 < 0)
+            return;
+        else
+            document.getElementById("qty").value--;
+    }
+</script>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
