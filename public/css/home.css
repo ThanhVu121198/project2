@@ -1942,7 +1942,7 @@ a, .text-link {
 }
 
 #clockdiv div > span{
-    padding: 15px;
+    padding: 10px;
     border-radius: 3px;
     background: #b18857;
     display: inline-block;
