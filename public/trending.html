@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trending News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/news_small.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-/fontawesome-free-5.15.4-web/css/all.css">
+</head>
+<body>
+<!-------------HEADER-------------->
+<div class="header">
+    <div class="container">
+        <div class="sum">
+            <div class="logo">
+                <img width="170" height="58" src="//bizweb.dktcdn.net/100/434/926/themes/832778/assets/logo.png?1630049520862" alt="ego wear">
+            </div>
+            <div class="seach">
+                <div class="seach_box">
+                    <div class="header_search theme-searchs">
+                        <div class="keys">
+                            <i class="fas fa-caret-down">
+                                <img src="./public/images/pngegg.png" height="30" width="30"/>
+                            </i>
+                            <div class="listkey">
+                                <p><b>
+                                    Tìm kiếm nhiều:
+                                </b></p>
+                                <a href="#" title="Chân váy">Chân váy</a>
+                                <a href="#" title="Áo sơ mi">Áo sơ mi</a>
+                                <a href="#" title="Áo đôi">Áo đôi</a>
+                                <a href="#" title="Đầm cao cấp">Đầm cao cấp</a>
+                                <a href="#" title="Áo vest">Áo vest</a>
+                                <a href="#" title="Váy body">Váy body</a>
+                                <a href="#" title="phụ kiện mới">phụ kiện mới</a>
+                                <a href="#" title="Áo ba lỗ">Áo ba lỗ</a>
+                                <a href="#" title="Áo khoác da">Áo khoác da</a>
+                                <a href="#" title="Áo chống nắng">Áo chống nắng</a>
+                            </div>
+                        </div>
+                        <form action="/search" class="input-group search-bar theme-header-search-form ultimate-search" role="search">
+                            <input type="text" aria-label="Tìm sản phẩm" name="query" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm..." class="search-auto input-group-field auto-search" required="">
+                            <input type="hidden" name="type" value="product">
+                            <span class="input-group-btn">
+								<button type="submit" class="btn icon-fallback-text" aria-label="Justify">
+									<svg enable-background="new 0 0 612.01 612.01" version="1.1" viewBox="0 0 612.01 612.01" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m606.21 578.71-158.01-155.49c41.378-44.956 66.802-104.41 66.802-169.84-0.02-139.95-115.3-253.39-257.51-253.39s-257.49 113.44-257.49 253.39 115.28 253.39 257.49 253.39c61.445 0 117.8-21.253 162.07-56.586l158.62 156.1c7.729 7.614 20.277 7.614 28.006 0 7.747-7.613 7.747-19.971 0.018-27.585zm-348.72-110.91c-120.33 0-217.87-95.993-217.87-214.41s97.543-214.41 217.87-214.41c120.33 0 217.87 95.993 217.87 214.41s-97.542 214.41-217.87 214.41z"/>
+                                    </svg>
+								</button>
+							</span>
+                        </form>
+                    </div>
+                </div>
+                <div class="tuvan">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto;display: block;position: absolute;width: 30px;height: 30px;left: 0;" width="71px" height="71px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                        <circle cx="50" cy="50" r="39.7789" fill="none" stroke="#fff000" stroke-width="8">
+                            <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1" keySplines="0 0.2 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                            <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                        </circle>
+                        <circle cx="50" cy="50" r="24.6446" fill="none" stroke="#fff000" stroke-width="8">
+                            <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1" keySplines="0 0.2 0.8 1" calcMode="spline"></animate>
+                            <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline"></animate>
+                        </circle>
+                    </svg>
+                    <p>
+                        Tư vấn hỗ trợ
+                    </p>
+                    <a href="tel:19006750">035 805 4499</a>
+                </div>
+            </div>
+            <div class="account">
+                <ul class="group-account">
+                    <li class="account_d-none">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1xx" x="0px" y="0px" viewBox="0 0 513.323 513.323" style="enable-background:new 0 0 513.323 513.323;" xml:space="preserve"> <g> <g> <path d="M256.661,257.323c-135.275,0-245.333,110.059-245.333,245.333c0,5.888,4.779,10.667,10.667,10.667    s10.667-4.779,10.667-10.667c0-123.52,100.48-224,224-224s224,100.48,224,224c0,5.888,4.779,10.667,10.667,10.667    c5.888,0,10.667-4.779,10.667-10.667C501.995,367.36,391.936,257.323,256.661,257.323z"/> </g> </g> <g> <g> <path d="M256.661,0c-64.683,0-117.333,52.629-117.333,117.333s52.651,117.333,117.333,117.333s117.333-52.629,117.333-117.333    S321.344,0,256.661,0z M256.661,213.333c-52.928,0-96-43.072-96-96s43.072-96,96-96c52.928,0,96,43.072,96,96    S309.589,213.333,256.661,213.333z"/> </g> </g> </svg>
+
+                            <a href="#">
+                                Đăng nhập</a>
+                        </div>
+                    </li>
+                    <li class="account_d-none1">
+                        <div class="icon">
+                            <svg enable-background="new 0 0 412.735 412.735" version="1.1" viewBox="0 0 412.74 412.74" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> <path d="m295.71 35.522c-34.43-0.184-67.161 14.937-89.339 41.273-22.039-26.516-54.861-41.68-89.339-41.273-64.633 0-117.03 52.395-117.03 117.03 0 110.76 193.31 218.91 201.14 223.09 3.162 2.113 7.286 2.113 10.449 0 7.837-4.18 201.14-110.76 201.14-223.09 0-64.633-52.396-117.03-117.03-117.03zm-89.339 319.22c-30.302-17.763-185.47-112.33-185.47-202.19 0-53.091 43.039-96.131 96.131-96.131 32.512-0.427 62.938 15.972 80.457 43.363 3.557 4.905 10.418 5.998 15.323 2.44 0.937-0.68 1.761-1.503 2.44-2.44 29.055-44.435 88.631-56.903 133.07-27.848 27.202 17.787 43.575 48.114 43.521 80.615 1e-3 90.907-155.17 184.95-185.47 202.19z"></path> </svg>
+                            <a href="#" class="wishlist_header" title="Sản phẩm yêu thích">
+                                <span class="headerWishlistCount"></span>
+                                Yêu thích
+                            </a>
+                        </div>
+                    </li>
+                    <li class="cart-drop">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1s" x="0px" y="0px" viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve"> <g> <path d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3   c-7,0-12.8,5.3-13.4,12.3l-28,315.3c0,0.4-0.1,0.8-0.1,1.2c0,35.9,32.9,65.1,73.4,65.1h244.6c40.5,0,73.4-29.2,73.4-65.1   C440.2,423.5,440.2,423.1,440.1,422.7z M244.5,27c37.9,0,68.8,30.4,69.6,68.1H174.9C175.7,57.4,206.6,27,244.5,27z M366.8,462   H122.2c-25.4,0-46-16.8-46.4-37.5l26.8-302.3h45.2v41c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h139.3v41   c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/> </g> </svg>
+                            <a class="img_hover_cart" href="#" title="Giỏ hàng">
+                                <span class="count_item count_item_pr"></span>
+                                Giỏ hàng
+                            </a>
+                        </div>
+                        <div class="top-cart-content d-none">
+                            <div class="CartHeaderContainer">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header_nav">
+    <div class="container">
+        <label for="nav-mobile-input" class="nav_bars-btn">
+            <img src="./public/images/bars-solid%20(1).svg">
+        </label>
+        <input type="checkbox" hidden name="" id="nav-mobile-input">
+        <label for="nav-mobile-input" class="nav_overlay"></label>
+        <nav class="nav_mobie_tong">
+            <div class="avata">
+                <img width="170" height="58" src="//bizweb.dktcdn.net/100/434/926/themes/832778/assets/logo.png?1630049520862" alt="ego wear">
+            </div>
+            <div class="seach2">
+                <div class="seach_box2">
+                    <div class="header_search theme-searchs">
+                        <div class="keys">
+                            <i class="fas fa-caret-down">
+                                <img src="./public/images/pngegg.png" height="30" width="30"/>
+                            </i>
+                            <div class="listkey">
+                                <p><b>
+                                    Tìm kiếm nhiều:
+                                </b></p>
+                                <a href="#" title="Chân váy">Chân váy</a>
+                                <a href="#" title="Áo sơ mi">Áo sơ mi</a>
+                                <a href="#" title="Áo đôi">Áo đôi</a>
+                                <a href="#" title="Đầm cao cấp">Đầm cao cấp</a>
+                                <a href="#" title="Áo vest">Áo vest</a>
+                                <a href="#" title="Váy body">Váy body</a>
+                                <a href="#" title="phụ kiện mới">phụ kiện mới</a>
+                                <a href="#" title="Áo ba lỗ">Áo ba lỗ</a>
+                                <a href="#" title="Áo khoác da">Áo khoác da</a>
+                                <a href="#" title="Áo chống nắng">Áo chống nắng</a>
+                            </div>
+                        </div>
+                        <form action="/search" class="input-group search-bar theme-header-search-form ultimate-search" role="search">
+                            <input type="text" aria-label="Tìm sản phẩm" name="query" value="" autocomplete="off" placeholder="Tìm kiếm sản phẩm..." class="search-auto input-group-field auto-search" required="">
+                            <input type="hidden" name="type" value="product">
+                            <span class="input-group-btn">
+								<button type="submit" class="btn icon-fallback-text" aria-label="Justify">
+									<svg enable-background="new 0 0 612.01 612.01" version="1.1" viewBox="0 0 612.01 612.01" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m606.21 578.71-158.01-155.49c41.378-44.956 66.802-104.41 66.802-169.84-0.02-139.95-115.3-253.39-257.51-253.39s-257.49 113.44-257.49 253.39 115.28 253.39 257.49 253.39c61.445 0 117.8-21.253 162.07-56.586l158.62 156.1c7.729 7.614 20.277 7.614 28.006 0 7.747-7.613 7.747-19.971 0.018-27.585zm-348.72-110.91c-120.33 0-217.87-95.993-217.87-214.41s97.543-214.41 217.87-214.41c120.33 0 217.87 95.993 217.87 214.41s-97.542 214.41-217.87 214.41z"/>
+                                    </svg>
+								</button>
+							</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <label for="nav-mobile-input" class="nav_bars-btn1">
+                <img src="./public/images/times-solid%20(1).svg">
+            </label>
+            <ul class="nav_mobie">
+                <li><a href="#" style="color: #ffffff">Home</a></li>
+                <li>
+                    <a href="#">
+                        Product
+                    </a>
+                    <ul class="subnav_mobie">
+                        <li class="battrang_mobie">
+                            <a href="#">
+                                Bat Trang ceramics
+                                <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                            </a>
+                            <ul class="subnav_mini_mobie">
+                                <li><a href="#">Dinner table</a></li>
+                                <li><a href="#">Teapot</a></li>
+                                <li><a href="#">Worship set</a></li>
+                                <li><a href="#">Statue</a></li>
+                            </ul>
+                        </li>
+                        <li class="tranh_mobie">
+                            <a href="#">
+                                Lacquer painting
+                                <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                            </a>
+                            <ul class="subnav_mini_mobie">
+                                <li><a href="#">Picasso paintings</a></li>
+                                <li><a href="#">Calligraphy painting</a></li>
+                                <li><a href="#">High-class lacquer painting</a></li>
+                                <li><a href="#">Vietnamese paintings</a></li>
+                            </ul>
+                        </li>
+                        <li class="mohinh_mobie">
+                            <a href="#">
+                                Model boat
+                                <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                            </a>
+                            <ul class="subnav_mini_mobie">
+                                <li><a href="#">Premium model ship</a></li>
+                                <li><a href="#">Ancient warship</a></li>
+                                <li><a href="#">Wooden sailing boat</a></li>
+                                <li><a href="#">Model in bottle</a></li>
+                            </ul>
+                        </li>
+                        <li class="lua_mobie">
+                            <a href="#">
+                                Ha Dong silk
+                                <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                            </a>
+                            <ul class="subnav_mini_mobie">
+                                <li><a href="#">Ready-made silk Ao Dai</a></li>
+                                <li><a href="#">Men's silk shirt</a></li>
+                                <li><a href="#">Embroidery</a></li>
+                                <li><a href="#">Scarf</a></li>
+                            </ul>
+                        </li>
+                        <li class="dong_mobie">
+                            <a href="#">
+                                Dai Bai Bronze
+                                <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                            </a>
+                            <ul class="subnav_mini_mobie">
+                                <li><a href="#">Premium bronze painting</a></li>
+                                <li><a href="#">Bronze Worship Set</a></li>
+                                <li><a href="#">Bronze painting</a></li>
+                                <li><a href="#">Drums</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" style="color: #eb3e32">Library</a></li>
+                <li><a href="#">News</a>
+                    <ul class="subnav1_mobie">
+                        <li><a href="#">Trending news</a></li>
+                        <li><a href="#">Promotional news</a></li>
+                        <li><a href="#">News tips</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Abouts</a></li>
+                <li><a href="#">Question</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </nav>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">
+                    Product
+                    <span class="icon_down">
+                    <img src="./public/images/pngegg.png" height="25" width="25"/>
+                    </span>
+                </a>
+                <ul class="subnav">
+                    <li class="battrang">
+                        <a href="#">
+                            Bat Trang ceramics
+                            <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                        </a>
+                        <ul class="subnav_mini">
+                            <li><a href="#">Dinner table</a></li>
+                            <li><a href="#">Teapot</a></li>
+                            <li><a href="#">Worship set</a></li>
+                            <li><a href="#">Statue</a></li>
+                        </ul>
+                    </li>
+                    <li class="tranh">
+                        <a href="#">
+                            Lacquer painting
+                            <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                        </a>
+                        <ul class="subnav_mini">
+                            <li><a href="#">Picasso paintings</a></li>
+                            <li><a href="#">Calligraphy painting</a></li>
+                            <li><a href="#">High-class lacquer painting</a></li>
+                            <li><a href="#">Vietnamese paintings</a></li>
+                        </ul>
+                    </li>
+                    <li class="mohinh">
+                        <a href="#">
+                            Model boat
+                            <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                        </a>
+                        <ul class="subnav_mini">
+                            <li><a href="#">Premium model ship</a></li>
+                            <li><a href="#">Ancient warship</a></li>
+                            <li><a href="#">Wooden sailing boat</a></li>
+                            <li><a href="#">Model in bottle</a></li>
+                        </ul>
+                    </li>
+                    <li class="lua">
+                        <a href="#">
+                            Ha Dong silk
+                            <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                        </a>
+                        <ul class="subnav_mini">
+                            <li><a href="#">Ready-made silk Ao Dai</a></li>
+                            <li><a href="#">Men's silk shirt</a></li>
+                            <li><a href="#">Embroidery</a></li>
+                            <li><a href="#">Scarf</a></li>
+                        </ul>
+                    </li>
+                    <li class="dong">
+                        <a href="#">
+                            Dai Bai Bronze
+                            <span class="icon2">
+                            <img src="./public/images/pngegg1.png" height="25" width="25"/>
+                            </span>
+                        </a>
+                        <ul class="subnav_mini">
+                            <li><a href="#">Premium bronze painting</a></li>
+                            <li><a href="#">Bronze Worship Set</a></li>
+                            <li><a href="#">Bronze painting</a></li>
+                            <li><a href="#">Drums</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">
+                News
+                <span class="icon_down">
+                    <img src="./public/images/pngegg.png" height="25" width="25"/>
+                    </span>
+            </a>
+                <ul class="subnav1">
+                    <li><a href="#">Trending news</a></li>
+                    <li><a href="#">Promotional news</a></li>
+                    <li><a href="#">News tips</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Abouts</a></li>
+            <li><a href="#">Question</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page">
+    <div class="container">
+        <div>
+            <div class="row">
+                <div id="sour">
+                    <div class="sor">
+                        <div class="row">
+                            <div class="col-12 a-left">
+                                <ul class="breadcrumb">
+                                    <li class="home">
+                                        <a href="#"><span>Home</span></a>
+                                        <span class="g">/</span>
+                                    </li>
+                                    <li>
+                                        <strong><span>Trending News</span></strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 order-2 order-lg-1">
+                    <div class="aside-item">
+                        <div class="main">
+
+                            <div class="top_list">
+                                <p><b>product list</b></p>
+                            </div>
+                            <div class="list_box">
+                                <a class="name_list"><b>Bat Trang ceramics</b></a>
+                                <ul>
+                                    <li class ="list"><a href="#">Dinner table</a></li>
+                                    <li class="list"><a href="#">Teapot</a></li>
+                                    <li class="list"><a href="#">Worship set</a></li>
+                                    <li class="list"><a href="#">Statue</a></li>
+                                </ul>
+                                <a class="name_list"><b>Lacquer painting</b></a>
+                                <ul>
+                                    <li class="list"><a href="#">Picasso paintings</a></li>
+                                    <li class="list"><a href="#">Calligraphy painting</a></li>
+                                    <li class="list"><a href="#">Lacquer painting</a></li>
+                                    <li class="list"><a href="#">Vietnamese paintings</a></li>
+                                </ul>
+                                <a class="name_list"><b>Model boat</b></a>
+                                <ul>
+                                    <li class="list"><a href="#">Premium model ship</a></li>
+                                    <li class="list"><a href="#">Ancient warship</a></li>
+                                    <li class="list"><a href="#">Wooden sailing boat</a></li>
+                                    <li class="list"><a href="#">Model in bottle</a></li>
+                                </ul>
+                                <a class="name_list"><b>Ha Dong silk</b></a>
+                                <ul>
+                                    <li class="list"><a href="#">Ready-made silk Ao Dai</a></li>
+                                    <li class="list"><a href="#">Men's silk shirt</a></li>
+                                    <li class="list"><a href="#">Embroidery</a></li>
+                                    <li class="list"><a href="#">Scarf</a></li>
+                                </ul>
+                                <a class="name_list"><b>Dai Bai Bronze</b></a>
+                                <ul>
+                                    <li class="list"><a href="#">Premium bronze painting</a></li>
+                                    <li class="list"><a href="#">Bronze Worship Set</a></li>
+                                    <li class="list"><a href="#">Bronze painting</a></li>
+                                    <li class="list"><a href="#">Drums</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="aside-blog">
+                            <div class="hot_list">
+                                <p><b>Related News</b></p>
+                            </div>
+                            <div class="hot_box">
+                                <div class="hot_box1">
+                                    <p>Hoi An opens the 3rd handicraft market night<br>
+                                        <a href="#">See more</a>
+                                        <i class="fas fa-eye"></i></p>
+                                </div>
+                                <hr>
+                                <div class="hot_box1">
+                                    <p>Water hyacinth knitting abroad in Ninh Binh<br>
+                                        <a href="#">See more</a>
+                                        <i class="fas fa-eye"></i></p>
+                                </div>
+                                <hr>
+                                <div class="hot_box1">
+                                    <p>Vietnam house - where the fine arts converge<br>
+                                        <a href="#">See more</a>
+                                        <i class="fas fa-eye"></i></p>
+                                </div>
+                                <hr>
+                                <div class="hot_box1">
+                                    <p>Thien Phu Stone Wood creates a highlight for living space<br>
+                                        <a href="#">See more</a>
+                                        <i class="fas fa-eye"></i></p>
+                                </div>
+                                <hr>
+                                <div class="hot_box1">
+                                    <p>The reason you must go to Hua Hin once<br>
+                                        <a href="#">See more</a>
+                                        <i class="fas fa-eye"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-12 order-1 order-lg-2">
+                    <div class="content">
+                        <div  class="Content1"><a href="#">
+                            <img src="https://vcdn1-dulich.vnecdn.net/2019/07/14/8-1563078544.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Bl1tPDscA7h1MnqCe727pQ"/>
+                            <h3>Hoi An opens the 3rd handicraft market night</h3>
+                            <p>The new night market is located right next to Hoi An market, operating from 6pm to 11pm every night, selling typical souvenirs of the old town....</p></a>
+                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                        </div>
+
+                        <div  class="Content1"><a href="#">
+                            <img src="http://blogcaycanh.vn/uploads/caycanh/1401854096_cay-beo-luc-binh-2.jpg"/>
+                            <h3>Water hyacinth knitting abroad in Ninh Binh</h3>
+                            <p>Water hyacinth stem, through the skillful hands of craftsmen in Kim Son district (Ninh Binh), has become an export fine art product with high economic value.....</p></a>
+                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                        </div>
+
+                        <div  class="Content1"><a href="#">
+                            <img src="https://file1.dangcongsan.vn/data/0/images/2020/12/15/kimdung/my-nghe.jpg"/>
+                            <h3>Vietnam house - where the fine arts converge</h3>
+                            <p>50 stalls and 12 miniature production models here represent 12 groups of Vietnamese handicraft villages.Saigon has many favorable conditions for development in all....</p></a>
+                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+
+</html>
