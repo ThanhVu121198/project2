@@ -7,12 +7,10 @@
 
 <%- include("nav")%>
 
-
-
-
-
 <div class="slider_header">
-
+    <div style="width: 800px;height: 100px; margin-left: 360px;position: relative;top:250px" class="tittle_slider">
+        <h1 style="text-align: center;color: #e9e4d0;font-size: 45px;font-weight: 600">Bring the warmth and ambience of real timber to any space!</h1>
+    </div>
 </div>
 
 <div class="main">
@@ -21,7 +19,7 @@
             <h2 class="font_product">
                 NEW PRODUCTS
             </h2>
-            <div style="background-image: url('https://mynghesenviet.vn/wp-content/uploads/2019/12/bg3@2x.jpg')" class="shop_box">
+            <div style="background-color: #e9e4d0" class="shop_box">
                 <a href="#"><div class="image_box">
                         <figure><img src="https://i.pinimg.com/736x/11/6d/b8/116db87b18e362deb613832fd426bd9a.jpg" width="299" height="300"></figure>
                         <div class="name_product">
@@ -224,7 +222,7 @@
                 </div>
                 <div class="box_new3">
                     <div class="new_image3"><a style="text-decoration: none" href="#">
-                            <img src="https://lh3.googleusercontent.com/proxy/qaeD_9ohOBavntTGxEWKZdRjbMZ5pcvYF9DEWMnMfLjPGMvavr5GcMlj8GiAFEb7-oI4PMvU97Pu2Zgvo-myyJVrg6_siZIdqeUyvBOUX76yKM8bekXf9u-HWXAR-YSHY48EiR_1YvAPo0h4O_hy2qlaQF6AKmUs">
+                            <img src="https://vcdn-ngoisao.vnecdn.net/2021/01/13/image006-1402-1610527001.jpg">
                             <h3>Wooden Statue of Dat Ma</h3>
                             <span class="click">
                         <p>Click Here</p>
@@ -250,15 +248,37 @@
             <div class="title">
                 <h2>SAME PRICE SALE</h2>
             </div>
-            <div id="countdown">
-                <h3 class="end"></h3>
-                <div id='tiles'></div>
-                <div class="labels">
+<!--            <div id="countdown">-->
+<!--                <h3 class="end"></h3>-->
+<!--                <div id='tiles'></div>-->
+<!--                <div class="labels">-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+            <div id="clockdiv">
+                <div>
+                    <span class="days"></span>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                </div>
+                <div>
+                    <span class="seconds"></span>
                 </div>
             </div>
+
+
+
+
+
+
             <div class="giamgia">
                 <a href="#"><div class="image_box">
-                        <figure><img src="https://lh3.googleusercontent.com/proxy/SSXzRcl5hGceF0eLQvkapz4GordmYXq5zuOf6rtN0Kb-tH45jxESAt0vqf4reTdwhExur00GxC1sJ2Wt-v4PufdeSUh1PgRdhZkkRuxGXKLm4GS9e1Urkw" width="299" height="300"></figure>
+                        <figure><img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-9/48391017_2221712381181226_6770207109607849984_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=X0C5v4_bld8AX9eopH9&_nc_ht=scontent.fhan2-2.fna&oh=168d650f59dc1c3c7012beee86772049&oe=6166C471" width="299" height="300"></figure>
                         <div class="name_product">
                             <h5>EGO WEAR</h5>
                             <h4>WOMAN CLASSIC WATCH</h4>
@@ -352,11 +372,11 @@
             </div>
         </div>
     </div>
-    <div class="covid">
-        <marquee>
-            <p>DISCOUNT during the pandemic season, strong discounts on all products.  NOTICE: Covid-19 Ego Translation Love, only accepting online orders, not coming to the store from 7/8.  HOT: 50% off all orders from 2 million, free shipping quality</p>
-        </marquee>
-    </div>
+<!--    <div class="covid">-->
+<!--        <marquee>-->
+<!--            <p>DISCOUNT during the pandemic season, strong discounts on all products.  NOTICE: Covid-19 Ego Translation Love, only accepting online orders, not coming to the store from 7/8.  HOT: 50% off all orders from 2 million, free shipping quality</p>-->
+<!--        </marquee>-->
+<!--    </div>-->
     <div class="max">
         <div class="video3">
             <video playsinline autoplay muted loop>
@@ -371,7 +391,7 @@
             <div class="top_product">
                 <div class="pr">
                     <a href="#"><div class="image_box">
-                            <figure><img src="https://lh3.googleusercontent.com/proxy/Xh9xlpGKA8AFlE0lWLKGgC6qMhF_T9i98wXJ-2FrUvGfOay4PGdUMSmBgum36IN4v8dij5TD85H0A6JihTWmnqKEDd92Ifcy6DOqnyAGbvi7jbzM7hoPD_Z1vQ" width="299" height="300"></figure>
+                            <figure><img src="https://phodogo.com.vn/wp-content/uploads/2021/03/tuong-go-dep-bai-250-1-1.jpg" width="299" height="300"></figure>
                             <div class="name_product">
                                 <h5>EGO WEAR</h5>
                                 <h4>WOODEN STATUE QUAN AM</h4>
@@ -581,6 +601,88 @@
 
 <script src="../public/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
+
+
+
+
+
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+    initializeClock('clockdiv', deadline);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     var string = '<li> <a target="_blank" href="https://messenger.com/t/thuongdq" class="iconfb"> <i class="fab fa-facebook-f"></i> </a> <span class="label fb">Chat Facebook</span> </li> <li> <a target="_blank" href="https://zalo.me/0388287614" class="iconzalo"> <img src="//bizweb.dktcdn.net/thumb/icon/100/434/926/themes/832778/assets/icon_zalomessage.png?1630049520862" alt="zalo"> </a> <span class="label zalo">Nhắn tin zalo</span> </li> <li> <a href="sms:19006750" class="iconsms"> <i class="fas fa-sms"></i> </a> <span class="label sms">Nhắn tin điện thoại</span> </li> ';
     setTimeout(function(){
