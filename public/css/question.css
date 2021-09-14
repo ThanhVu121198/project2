@@ -496,6 +496,7 @@ a, .text-link {
     position: relative;
     overflow: hidden;
 }
+
 /*---------------Mobile--------------*/
 @keyframes fadeIn {
     from{
