@@ -513,6 +513,7 @@ a, .text-link {
 .main{
     width: 100%;
     float: none;
+    margin-top: 30px;
     margin-right: auto;
 }
 .list_product{
@@ -587,15 +588,6 @@ a, .text-link {
 }
 
 /*----nguồn-----*/
-#sour strong{
-    color: orangered;
-}
-#sour .breadcrumb{
-    padding: 5px;
-}
-#sour li{
-    padding: 1px;
-}
 .col-lg-9 .order-lg-2 .box_new{
     width: 400px;
     height: 200px;

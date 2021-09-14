@@ -557,6 +557,7 @@ a, .text-link {
 .main{
     width: 250px;
     float: none;
+    margin-top: 20px;
     margin-right: auto;
 }
 .hot_list{
