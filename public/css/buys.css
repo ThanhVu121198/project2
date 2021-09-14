@@ -539,6 +539,14 @@ a, .text-link {
     position: relative;
     margin-top: 80px;
 }
+.slider_main{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 .diachi{
     display: flex;
     margin-top: 30px;
