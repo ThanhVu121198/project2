@@ -150,8 +150,8 @@ html{
     text-decoration: none;
 }
 .header_search .keys .listkey a:hover{
-    background-color: #ff3900;
-    color: white;
+    background-color: #b18857;
+    color: #d0d0d0;
 }
 
 /*--------------TƯ VẤN------------------*/
@@ -487,19 +487,20 @@ a, .text-link {
 
 .slider_header{
     width: 100%;
-    height: 580px;
+    height: 630px;
     background-color: #ffffff;
-    background-image: url("https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/s2048x2048/241317238_1277865525980738_1850385937973111121_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=tAFsKCSVDwcAX_78os-&_nc_ht=scontent.fhan2-3.fna&oh=8d941d954913ae964e4b9a9b165508f1&oe=615EFB4E");
+    background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -20px;
 }
 /*-----------------MAIN----------------*/
 .main{
     width: 100%;
-    height: 4200px;
+    height: 4100px;
     position: relative;
     z-index: 1;
-    background-image: url("https://mynghesenviet.vn/wp-content/uploads/2019/12/bg3@2x.jpg");
+    background-color: #e9e4d0;
 }
 .product_new > .container{
     width: 100%;
@@ -531,7 +532,7 @@ a, .text-link {
     margin-top: 110px;
     position: relative;
     z-index: 1;
-   background-image: url("https://mynghesenviet.vn/wp-content/uploads/2019/12/bg3@2x.jpg");
+    background-color: #e9e4d0;
 }
 .image_box img {
     width: 299px;
@@ -664,7 +665,7 @@ figure{
     bottom: 300px;
     width: 50%;
     height: 550px;
-    margin-top: -190px;
+    margin-top: -187px;
 }
 .phu_de::before{
     content: '';
@@ -828,9 +829,9 @@ figure{
 
 .sale{
     width: 100%;
-    height: 750px;
-    margin-top: 1250px;
-    background-image: url("https://mynghesenviet.vn/wp-content/uploads/2019/12/bg4@2x.jpg");
+    height: 800px;
+    margin-top: 1200px;
+    background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/06/background-04.jpg?id=271");
     background-size: cover;
 }
 .sale .container{
@@ -842,7 +843,7 @@ figure{
     width: 300px;
     height: 40px;
     margin-left: -17px;
-    color: #e3bd74;
+    color: #000000;
     position: relative;
     top: 70px;
 }
@@ -1136,18 +1137,18 @@ a, .text-link {
 .newhot{
     width: 100%;
     height: 737px;
-    background-image: url("http://carpenter.weblusive-themes.com/wp-content/uploads/2019/08/bg-2.jpg?id=648");
+    background-color: #e9e4d0;
     margin-top: 40px;
 }
 .newhot .container{
     width: 1260px;
     height: 687px;
-    background-image: url("http://carpenter.weblusive-themes.com/wp-content/uploads/2019/08/bg-2.jpg?id=648");
+    background-color: #e9e4d0;
 }
 .tintuc{
     width: 1260px;
     height: 622px;
-    background-image: url("http://carpenter.weblusive-themes.com/wp-content/uploads/2019/08/bg-2.jpg?id=648");
+    background-color: #e9e4d0;
     margin-left: 5px;
 }
 .title_new{
@@ -1540,6 +1541,10 @@ a, .text-link {
 .hotline-bar > a:active {
     color: #fff;
 }
+.max {
+    height: 670px;
+    margin-top: 100px;
+}
 @-webkit-keyframes phonering-alo-circle-anim {
     0% {
         -webkit-transform: rotate(0) scale(0.5) skew(1deg);
@@ -1906,6 +1911,47 @@ a, .text-link {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 300px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #e9e4d0;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 10px;
+    border-radius: 3px;
+    background: #b18857;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
 
 
 

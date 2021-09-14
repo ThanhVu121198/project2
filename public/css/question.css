@@ -157,8 +157,8 @@ html{
     text-decoration: none;
 }
 .header_search .keys .listkey a:hover{
-    background-color: #ff3900;
-    color: white;
+    background-color: #b18857;
+    color: #d0d0d0;
 }
 
 /*--------------TƯ VẤN------------------*/
@@ -488,6 +488,14 @@ a, .text-link {
     position: relative;
     top: -90px;
 }
+.slider_main{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 
 /*---------------Mobile--------------*/
 @keyframes fadeIn {
@@ -545,12 +553,21 @@ a, .text-link {
 
     }
 }
+
+
+.slider_main{
+    position: relative;
+    top: -30px;
+}
+
+
+
 /*---------------MAIN--------------*/
 .main{
     margin-left: -125px;
     position: relative;
     z-index: 1;
-    height: 900px;
+    height: 1160px;
 }
 .breadcrumb{
     background-color: white;

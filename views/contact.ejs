@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<!-------------HEADER-------------->
+<%- include("header")%>
+
+<%- include("nav")%>
+<div class="slider_header1">
+    <h1>GET IN TOUCH</h1>
+</div>
+<div class="main">
+    <div class="bread-crumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 a-left">
+                    <ul class="breadcrumb" style="background-image: url('https://mynghesenviet.vn/wp-content/uploads/2019/12/bg3@2x.jpg');">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-contact">
+        <div class="container">
+            <div class="title">
+                <h1>Contact</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-12">
+                                    <div class="item-contact">
+                                        <div class="img">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="contant-r">
+                                            Adress
+                                            <p>
+                                                221 Chùa Bộc, Đống Đa, Hà Nội, Hà Nội
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="item-contact">
+                                        <div class="img">
+                                            <i class="fas fa-question"></i>
+                                        </div>
+                                        <div class="contant-r">
+                                            Send Inquiry:
+                                            <p><a href="#">support@sapo.vn</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="item-contact">
+                                        <div class="img">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contant-r">
+                                            Telephone:
+                                            <p><a class="fone" href="#">19006600</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="wrapcontact">
+                                <div class="ifameMap">
+                                    <div id="contact-map" class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.4737883168477!2d105.7329181139822!3d21.05373098598491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1630420914401!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <div class="form-signup">
+                                <div class="row group-contact">
+                                    <fieldset class="form-group col-lg-6 col-12">
+                                        <label>Full name<em>*</em></label>
+                                        <input placeholder="" type="Name" class="form-control  form-control-lg" required="" value="" name="contact[Name]">
+                                    </fieldset>
+                                    <fieldset class="form-group col-lg-6 col-12">
+                                        <label>Email<em>*</em></label>
+                                        <input placeholder="" type="Email" class="form-control  form-control-lg" required="" value="" name="contact[Name]">
+                                    </fieldset>
+                                    <fieldset class="form-group col-12">
+                                        <label>Content<em>*</em></label>
+                                        <textarea placeholder="Message" name="contact[body]" id="comment" class="form-control content-area form-control-lg" rows="5" required=""></textarea>
+                                    </fieldset>
+                                    <div class="col-lg-12 ">
+                                        <button class="button-default" type="submit" >Send the contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("footer")%>
+</body>
+</html>
