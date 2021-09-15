@@ -547,6 +547,9 @@ a, .text-link {
     position: relative;
     overflow: hidden;
 }
+.slider_main h1{
+    font-weight: 800;
+}
 .diachi{
     display: flex;
     margin-top: 30px;
@@ -1137,7 +1140,6 @@ figure{
         font-size: 12px;
     }
     .tab{
-        display: none;
     }
     .hot_link{
         margin-top: 30px;
