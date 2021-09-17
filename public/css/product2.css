@@ -523,6 +523,9 @@ a, .text-link {
     float: left;
     width: 19%;
 }
+.slider_main h1{
+    font-weight: 800;
+}
 .top_list{
     text-transform: uppercase;
     width: 100%;
@@ -732,6 +735,10 @@ figure{
         width: 100%;
         float:none;
         margin: 0;
+        height: auto;
+    }
+    .slider_main{
+        display: none;
     }
     .account_d-none a{
         text-align: center;
@@ -770,6 +777,11 @@ figure{
     .abs_mobie{
         width:100%;
         display:block;
+        margin-top: 80px;
+    }
+    .abs_mobie select{
+        width: 100%;
+        background-color: #eead5a;
     }
     .button_pade{
         margin-left:40%;
@@ -850,6 +862,9 @@ figure{
     .nav-
 }
 @media screen and (min-width: 1024px) and (max-width: 1365px){
+    .main{
+        margin-left: 1px;
+    }
     .content{
         width: 75%;
         margin-left: 30px;}
