@@ -326,23 +326,23 @@ a, .text-link {
 }
 .battrang .icon2{
     position: relative;
-    left: 130px;
+    left: 120px;
 }
 .tranh .icon2{
     position: relative;
-    left: 94px;
+    left: 80px;
 }
 .mohinh .icon2{
     position: relative;
-    left: 64px;
+    left: 48px;
 }
 .lua .icon2{
     position: relative;
-    left: 65px;
+    left: 50px;
 }
 .dong .icon2{
     position: relative;
-    left: 105px;
+    left: 92px;
 }
 .subnav1 li{
     position: relative;
@@ -546,6 +546,9 @@ a, .text-link {
     background-size: cover;
     position: relative;
     overflow: hidden;
+}
+.slider_main h1{
+    font-weight: 800;
 }
 .diachi{
     display: flex;
@@ -1137,7 +1140,6 @@ figure{
         font-size: 12px;
     }
     .tab{
-        display: none;
     }
     .hot_link{
         margin-top: 30px;

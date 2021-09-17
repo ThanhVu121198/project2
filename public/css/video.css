@@ -547,10 +547,11 @@ a, .text-link {
 }
 /*---------------MAIN--------------*/
 .main{
-    height: 1200px;
+    height: auto;
     position: relative;
     z-index: 1;
-    left: -110px;
+    width: 85%;
+    margin-left: 100px;
 }
 .breadcrumb{
     background-color: #e9e4d0;
@@ -568,18 +569,29 @@ a, .text-link {
 .section-detail-default{
     position: relative;
     top: 15px;
+    height: 400px;
 }
 .description-video{
     position: relative;
-    left: 60px;
+    left: 30px;
     bottom: 25px;
 }
 .video-display iframe{
     position: relative;
+    height: 350px;
     right: 45px;
 }
-.frm_comment{
-    box-shadow: 0 2px 30px 0 rgb(0 0 0 / 50%);
+.frm_comment input{
+    width: 100%;
+    display: none;
+    height: 30px;
+}
+.name-video {
+
+}
+.name-video:hover{
+    text-decoration: none;
+    color: #eead5a;
 }
 scroll-tag .comment-box span{
     float: left;
@@ -592,9 +604,15 @@ scroll-tag .comment-box span{
 }
 .video1{
     padding: 10px;
+    margin-top: 30px;
 }
 .video1 a h3{
     font-size: 15px;
+    margin-top: -3px;
+}
+.video1 a:hover{
+    color: #eead5a;
+    text-decoration:none;
 }
 /*---------------FOOTER--------------*/
 .footer{
@@ -770,4 +788,189 @@ scroll-tag .comment-box span{
     bottom: 0;
     left: 0;
     z-index: 999999;
+}
+@media screen and (max-width: 739px){
+    .slider_main{
+        display: none;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    .main {
+        margin: 0;
+        padding:10px;
+        width: 100%;
+    }
+    .section-detail-default{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: table-row;
+    }
+    .video-display{
+        padding: 0;
+    }
+    .video-display iframe{
+        width: 100%;
+        right: 0;
+    }
+    .description-video{
+        padding: 0;
+        margin: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .name-video{
+        font-size: 28px;
+    }
+    .sapo-video{
+        font-size: 20px;
+    }
+    .network-box-video{
+        display: inline-flex;
+        font-size: 18px;
+    }
+    .like-box{
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    input{
+        display: none;
+    }
+    .video{
+        margin: 0;
+        padding: 0;
+    }
+    .video1{
+        margin: 0;
+        width: 50%;
+        float: left;
+        padding: 3px;
+        height: 250px;
+    }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .main {
+        margin: 0;
+        padding:20px;
+        width: 100%;
+    }
+    .section-detail-default{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: table-row;
+    }
+    .video-display{
+        padding: 0;
+    }
+    .video-display iframe{
+        width: 100%;
+        right: 0;
+        height: 450px;
+    }
+    .description-video{
+        padding: 0;
+        margin: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .name-video{
+        font-size: 28px;
+    }
+    .sapo-video{
+        font-size: 20px;
+    }
+    .network-box-video{
+        display: inline-flex;
+        font-size: 18px;
+    }
+    .like-box{
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    input{
+        display: none;
+    }
+    .video{
+        margin: 0;
+        padding: 0;
+    }
+    .video1{
+        margin: 0;
+        width: 33%;
+        float: left;
+        padding: 3px;
+        height: 250px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .main {
+        margin: 0;
+        padding:20px;
+        width: 100%;
+    }
+    .section-detail-default{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: table-row;
+        float: left;
+    }
+    .video-display{
+        padding: 0;
+        width: 60%;
+        height: 100%;
+    }
+    .video-display iframe{
+        width: 100%;
+        right: 0;
+        height: 100%;
+    }
+    .description-video{
+        padding: 0 0 0 15px;
+        width: 40%;
+        left: 0;
+        bottom: 0;
+    }
+    h2{
+        top:0;
+        font-size: 28px;
+        margin-top: 0;
+    }
+    .sapo-video{
+        font-size: 20px;
+    }
+    .network-box-video{
+        display: inline-flex;
+        font-size: 18px;
+    }
+    .like-box{
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    input{
+        display: none;
+    }
+    .video{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+        height: auto;
+        padding: 0;
+    }
+    .video1{
+        padding-left: 5px;
+    }
 }

@@ -135,489 +135,515 @@
             </div>
             <!--      đây là phần content -->
             <div class="box_content">
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithathoaphat.info.vn/wp-content/uploads/2017/06/mau-ban-ghe-go-cao-cap-02.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Dragon Sculpture Set</h4>
-                                <div class="gia">
-                                    399.000.000đ
+                <% for (var i=0;i<SanPham.length;i++){ %>
+                    <div class="box_column">
+                        <a href="#"><div class="image_box">
+                                <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
+                                <div class="name_product">
+                                    <h5>EGO WEAR</h5>
+                                    <h4><%= SanPham[i].TenSP %></h4>
+                                    <div class="gia">
+                                        399.000.000đ
+                                    </div>
+                                    <div class="gia2">
+                                        460.000.000đ
+                                    </div>
                                 </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://cdn.muabannhanh.com/asset/frontend/img/gallery/2018/08/27/5b836cdad4248_1535339738.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>nghe dinh set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/05/z2486406968397_ae6125b468dbe81249d4253dea25e18f.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>shiihuang frequency set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2021/03/15.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>nghe dinh ebony</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRS7wyNzQpplyvPs6D943hHWrdw4SQTFjWe0dhXSFxzkFI6Ij8j3XT4eWRRREZEeacx501u0O0iHFTj9CdjWVg10YRPlaVnKt7F4_basUXK&usqp=CAE" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Royal Set of Red Nacre</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ-ZMIsI3sDW2A_F3RR4DTdv8PimQlAGzzpa0Eo_3TLeudhzhIP3r7Az9aBYGTmN7wHl-Q6dxFF_xTdOi7ZwbPfbg992xmzehlb3bgb37-9&usqp=CAE" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Minh Quoc digs Melaleuca wood</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://vn-live-05.slatic.net/p/3d361c929b866ada6389d4862a775c3d.jpg_2200x2200q80.jpg_.webp" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Column 14 Elephant Hands</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ3VGmYLnRoxdz-lwvIxcvcALYCLduCmhtWZdxT3hOwdyFAkRPBULVzlFPvQao28D1_6yyJNf0FwYNR8OidP6Mqra3iLnuULkqWqUUgbM8&usqp=CAE" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>watercolor painting set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLk2jWNEsVWnEQH37SXqXgPDPbR1yE9CgEu0sRqom072rUgzGV47Ih7cRTGJzr7wJP9yUY4jXoY3wM8AlUkUgKu5u6kO4Xj9GOjepIMfA&usqp=CAE" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>black ebony royal set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogotunhiengiare.com/upload/product/bo-tua-ngang-go-soi-6-mon-sp383.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>simple mini set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/04/z2482356436873_1eb0de7e0eab7c1681a14afb323e6337.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Chapter about the elephant</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://xuonggoanlac.com/wp-content/uploads/2021/03/ban-an-tron-8-ghe-gia-nguyen-khoi-565x424.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>red rosewood round set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://xuonggoanlac.com/wp-content/uploads/2021/03/ban-an-k3-huong-xam-2-1-565x753.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Canned gray k3 dining set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/05/bo-tan-go-mun-duoi-cong-1.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Qin Shi Huang peacock tail</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/05/au-a-van-tran-sieu-dep-4-768x537.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>set Confucius</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
+                                <button class="heat">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="buy">
+                                    <i class="fas fa-shopping-basket"> +1</i>
+                                </button>
+                                <button class="buy_now">
+                                    <i class="fas fa-shopping-basket"> Buy Now</i>
+                                </button>
+                            </div></a>
+                    </div>
+                <% } %>>
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://noithathoaphat.info.vn/wp-content/uploads/2017/06/mau-ban-ghe-go-cao-cap-02.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4></h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://cdn.muabannhanh.com/asset/frontend/img/gallery/2018/08/27/5b836cdad4248_1535339738.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>nghe dinh set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/05/z2486406968397_ae6125b468dbe81249d4253dea25e18f.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>shiihuang frequency set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2021/03/15.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>nghe dinh ebony</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRS7wyNzQpplyvPs6D943hHWrdw4SQTFjWe0dhXSFxzkFI6Ij8j3XT4eWRRREZEeacx501u0O0iHFTj9CdjWVg10YRPlaVnKt7F4_basUXK&usqp=CAE" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Royal Set of Red Nacre</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ-ZMIsI3sDW2A_F3RR4DTdv8PimQlAGzzpa0Eo_3TLeudhzhIP3r7Az9aBYGTmN7wHl-Q6dxFF_xTdOi7ZwbPfbg992xmzehlb3bgb37-9&usqp=CAE" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Minh Quoc digs Melaleuca wood</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://vn-live-05.slatic.net/p/3d361c929b866ada6389d4862a775c3d.jpg_2200x2200q80.jpg_.webp" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Column 14 Elephant Hands</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ3VGmYLnRoxdz-lwvIxcvcALYCLduCmhtWZdxT3hOwdyFAkRPBULVzlFPvQao28D1_6yyJNf0FwYNR8OidP6Mqra3iLnuULkqWqUUgbM8&usqp=CAE" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>watercolor painting set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLk2jWNEsVWnEQH37SXqXgPDPbR1yE9CgEu0sRqom072rUgzGV47Ih7cRTGJzr7wJP9yUY4jXoY3wM8AlUkUgKu5u6kO4Xj9GOjepIMfA&usqp=CAE" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>black ebony royal set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogotunhiengiare.com/upload/product/bo-tua-ngang-go-soi-6-mon-sp383.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>simple mini set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/04/z2482356436873_1eb0de7e0eab7c1681a14afb323e6337.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Chapter about the elephant</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://xuonggoanlac.com/wp-content/uploads/2021/03/ban-an-tron-8-ghe-gia-nguyen-khoi-565x424.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>red rosewood round set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://xuonggoanlac.com/wp-content/uploads/2021/03/ban-an-k3-huong-xam-2-1-565x753.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Canned gray k3 dining set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/05/bo-tan-go-mun-duoi-cong-1.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Qin Shi Huang peacock tail</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://tongkhodogo.com/wp-content/uploads/2021/05/au-a-van-tran-sieu-dep-4-768x537.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>set Confucius</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
 
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2020/11/z2177786331770_0cf457d5a6b3ad60fa2b758509eaef4a.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Red Wood Beak Hook</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2020/11/z2177787117716_1c92c8d8b199679626f14c9b1eb5c53e.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Perfume Wood Beak Hook</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2020/11/z2177786331770_0cf457d5a6b3ad60fa2b758509eaef4a.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Red Wood Beak Hook</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2020/11/z2177787117716_1c92c8d8b199679626f14c9b1eb5c53e.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Perfume Wood Beak Hook</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
 
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2017/09/bo-ban-ghe-go-mun-hoa1.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Minh Nghe Ebony Flower Set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogonguyenvinh.vn/wp-content/uploads/2017/09/bo-ban-ghe-go-mun-hoa1.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Minh Nghe Ebony Flower Set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
 
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQPw9C4Csnp-uD0hRJIg8VFRf1zfFji6S2ffsoXCe451d_sq96egf-ubL58x4YKP-Cs2TxsYqGCPEKFYNmay0QfkGrw5IhtUiDJwoAz1FK-&usqp=CAE" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>High quality table and chairs set</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQPw9C4Csnp-uD0hRJIg8VFRf1zfFji6S2ffsoXCe451d_sq96egf-ubL58x4YKP-Cs2TxsYqGCPEKFYNmay0QfkGrw5IhtUiDJwoAz1FK-&usqp=CAE" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>High quality table and chairs set</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
 
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQdnMGoCb0x3w9P-J0eikeN7PSyoug6enAQnMCpw7kHVnk7AuKTHraXCeMVZaGp47_sQr3Dvj7T309GeGNxaW8tVnVazUH3hktAr2D8Bftn&usqp=CAE"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>high quality real wood classic sofa sett</h4>
-                                <div class="gia">
-                                    399.000.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQdnMGoCb0x3w9P-J0eikeN7PSyoug6enAQnMCpw7kHVnk7AuKTHraXCeMVZaGp47_sQr3Dvj7T309GeGNxaW8tVnVazUH3hktAr2D8Bftn&usqp=CAE"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>high quality real wood classic sofa sett</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
                 </div>
             </div>
             <!--het content   -->
