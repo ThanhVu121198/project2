@@ -134,245 +134,33 @@
             </div>
             <!--      đây là phần content -->
             <div class="box_content">
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2019/05/IMG_0399.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Box of medals and medals "Party flag"</h4>
-                                <div class="gia">
-                                    399.000đ
+                <% for (var i=0;i<SanPham.length;i++){ %>
+                    <div class="box_column">
+                        <a href="#"><div class="image_box">
+                                <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
+                                <div class="name_product">
+                                    <h5>EGO WEAR</h5>
+                                    <h4><%= SanPham[i].TenSP %></h4>
+                                    <div class="gia">
+                                        399.000.000đ
+                                    </div>
+                                    <div class="gia2">
+                                        460.000.000đ
+                                    </div>
                                 </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/DSC_0233-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Box of medals "National Flag"</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2019/06/IMG_0863.jpg"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>small ebony box</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2020/06/IMG_9607.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>large wooden incense box</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2020/07/IMG_2884-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>wooden box with handle</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2019/09/IMG_2168.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Box of medals, jewelry</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2021/04/z2427108655462_4bff75e24010a0a3044ba533d3b113b4-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>High-class blessing jewelry box</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2021/05/z2484225331093_3823a8cceea4f4d4594d6054872ccf6e-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>High-quality rosewood jewelry</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2021/06/z2562191459748_c8e6d8de46c370cfe0fa9dcb89f314c3-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Jewelry box with flowers and incense</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/DSC_5229-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Stylized jewelry box</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
+                                <button class="heat">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="buy">
+                                    <i class="fas fa-shopping-basket"> +1</i>
+                                </button>
+                                <button class="buy_now">
+                                    <i class="fas fa-shopping-basket"> Buy Now</i>
+                                </button>
+                            </div></a>
+                    </div>
+                <% } %>>
+
                 </div>
 
             </div>

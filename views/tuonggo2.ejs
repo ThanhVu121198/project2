@@ -136,245 +136,33 @@
             <!--      đây là phần content -->
             <div class="box_content">
 
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/DSC_5284-1.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Maitreya blood dragon statue</h4>
-                                <div class="gia">
-                                    399.000đ
+                <% for (var i=0;i<SanPham.length;i++){ %>
+                    <div class="box_column">
+                        <a href="#"><div class="image_box">
+                                <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
+                                <div class="name_product">
+                                    <h5>EGO WEAR</h5>
+                                    <h4><%= SanPham[i].TenSP %></h4>
+                                    <div class="gia">
+                                        399.000.000đ
+                                    </div>
+                                    <div class="gia2">
+                                        460.000.000đ
+                                    </div>
                                 </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/DSC_5288.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Green cypress Maitreya statue</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/DSC_5292-300x300.jpg"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Maitreya statue pulling money bag</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://phongthuygo.com/wp-content/uploads/2020/03/b8a9c2c1634d9813c15c.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>wooden quan yin statue</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://i.ytimg.com/vi/CmYOWrBnXIw/maxresdefault.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>mandarin statue</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://tuonggo360.com/media/catalog/product/cache/48683d5ce1e35fb4445c504119b44f8c/z/2/z2674398094191_1e9428bb4616accdf74b676f46de5520.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>arowana statue</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://news.meeycdn.com/uploads/2020/10/anh-1-y-nghia-cua-tuong-go-phong-thuy.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Guan Yu statue</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://loiphong.vn/uploaded/10.GOC-TU-VAN/56.thiem-thu/thiem-thu-3.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>toad statue</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://sonhabuloncapthep.com/wp-content/uploads/2019/09/I1ovuRDi78n5gCatD0ZM29eoHJardRJPy_-LrOENEozYvRdSTIfVITFTc7xmsmjoH40tI9GmzcgNye3DKJUE2iYp9o5zEAvTs1veoCFGOH_kalIygFtp7Yn7lz1YviwivHFrMr0Csbocot652Q.png" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>statue of hundred Buddhas</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://tuonggomynghedep.com/wp-content/uploads/2019/04/2019-04-22_082913.png" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Buddha statue</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
+                                <button class="heat">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="buy">
+                                    <i class="fas fa-shopping-basket"> +1</i>
+                                </button>
+                                <button class="buy_now">
+                                    <i class="fas fa-shopping-basket"> Buy Now</i>
+                                </button>
+                            </div></a>
+                    </div>
+                <% } %>>
+
                 </div>
             </div>
             <!--het content   -->

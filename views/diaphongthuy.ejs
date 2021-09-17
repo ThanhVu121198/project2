@@ -135,245 +135,33 @@
             </div>
             <!--      đây là phần content -->
             <div class="box_content">
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2020/03/IMG_2707-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Wood plate phoenix, ephemeral</h4>
-                                <div class="gia">
-                                    399.000đ
+                <% for (var i=0;i<SanPham.length;i++){ %>
+                    <div class="box_column">
+                        <a href="#"><div class="image_box">
+                                <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
+                                <div class="name_product">
+                                    <h5>EGO WEAR</h5>
+                                    <h4><%= SanPham[i].TenSP %></h4>
+                                    <div class="gia">
+                                        399.000.000đ
+                                    </div>
+                                    <div class="gia2">
+                                        460.000.000đ
+                                    </div>
                                 </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2020/03/IMG_2126.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Pisces Vong Nguyet wooden plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2020/03/IMG_2132.jpg"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Buddha wooden plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src=https://mynghephuloi.com/wp-content/uploads/2020/03/IMG_2124-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>transparent wooden plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2020/03/IMG_2569.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Maitreya Buddha wooden disc</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2020/03/IMG_2568-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Four Spirits Wooden Plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/dia-phong-thuy-4-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Swallow wooden plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/dia-phong-thuy-2.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>pigeon wooden plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/dia-phong-thuy-1-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>rose wood plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/dia-phong-thuy-6-300x300.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Quynh flowern  wood plate</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
+                                <button class="heat">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="buy">
+                                    <i class="fas fa-shopping-basket"> +1</i>
+                                </button>
+                                <button class="buy_now">
+                                    <i class="fas fa-shopping-basket"> Buy Now</i>
+                                </button>
+                            </div></a>
+                    </div>
+                <% } %>>
+
                 </div>
             </div>
         <!--het content   -->

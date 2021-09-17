@@ -136,245 +136,32 @@
             </div>
             <!--      đây là phần content -->
             <div class="box_content">
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-dung-cham-hoa-hong-go-mun-duoi-cong-dep-gia-re.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Rose Sculpture Clock</h4>
-                                <div class="gia">
-                                    399.000đ
+                <% for (var i=0;i<SanPham.length;i++){ %>
+                    <div class="box_column">
+                        <a href="#"><div class="image_box">
+                                <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
+                                <div class="name_product">
+                                    <h5>EGO WEAR</h5>
+                                    <h4><%= SanPham[i].TenSP %></h4>
+                                    <div class="gia">
+                                        399.000.000đ
+                                    </div>
+                                    <div class="gia2">
+                                        460.000.000đ
+                                    </div>
                                 </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-go-huong-da-thap-dau-tron-dep-gia-re.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Wood Clock Tower Stone Incense</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-dung-qua-lac-go-huong-da-cham-hoa-dep-gia-re.jpg"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>incense wood flower sculpture</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-go-dung-qua-lac-hinh-thap-go-huong-dep.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Ebony Pendulum Stand Clock</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-dung-cham-hoa-tay-go-mun-duoi-cong-dep-gia-re.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Peacock Tail Ebony Flower</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-go-mun-duoi-cong-cham-chim-dep-gia-re.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Ebony Peacock Tail Touching Bird</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-go-mun-duoi-cong-thap-dau-tron-dep-gia-re.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Round Head Tower Clock</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-go-mun-duoi-cong-thap-dau-tron-dep-gia-re.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Standing Ebony Tower Clock</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-de-ban-go-huong-da-mini-dep-gia-re.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Scented Wood Table Clock</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/thumbs/dong-ho-qua-lac-dung-go-huong-da-cao-cap-dep-gia-tot.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>High Quality Stone Incense Wood</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
+                                <button class="heat">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="buy">
+                                    <i class="fas fa-shopping-basket"> +1</i>
+                                </button>
+                                <button class="buy_now">
+                                    <i class="fas fa-shopping-basket"> Buy Now</i>
+                                </button>
+                            </div></a>
+                    </div>
+                <% } %>>
                 </div>
             </div>
             <!--het content   -->

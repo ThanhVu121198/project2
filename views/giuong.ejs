@@ -135,245 +135,247 @@
             </div>
             <!--      đây là phần content -->
             <div class="box_content">
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/giuong-ba-thanh-go-gu3-e1621918419698.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>3 mahogany bunk beds</h4>
-                                <div class="gia">
-                                    399.000đ
+                <% for (var i=0;i<SanPham.length;i++){ %>
+                    <div class="box_column">
+                        <a href="#"><div class="image_box">
+                                <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
+                                <div class="name_product">
+                                    <h5>EGO WEAR</h5>
+                                    <h4><%= SanPham[i].TenSP %></h4>
+                                    <div class="gia">
+                                        399.000.000đ
+                                    </div>
+                                    <div class="gia2">
+                                        460.000.000đ
+                                    </div>
                                 </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/giuong-voi-go-g%E1%BB%A5-dep-600x600.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Wooden elephant triple bed</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/phuong-luoi-go-gu-can-oc-dep-600x600.jpg"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Phuong mahogany snail</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/giuong-sap-ba-thanh-go-gu-can-oc-sa-cudep-600x600.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Solid mahogany triple bed</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/giuong-cong-chua-long-san-can-oc-sa-cu-1-600x600.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Floor bed</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/sap-ba-thanh-can-oc-sa-cu-1-600x600.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Triple bed of honey mahogany</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/giuong-ngu-co-dien-go-go-do-cham-khac-doi-chim-cong.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>Modern bed model</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-4FCZWICJ1QnVnG29LKdJWBlygoeYeH1vA&usqp=CAU" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>aristocratic sculpture bed</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://sc02.alicdn.com/kf/HTB17fQOKamWBuNjy1Xaq6xCbXXar.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>classic royal bed</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
-                </div>
-                <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://cdn.muabannhanh.com/asset/frontend/img/gallery/2020/06/13/5ee43960885b3_1592015200.jpg" width="299" height="300"></figure>
-                            <div class="name_product">
-                                <h5>EGO WEAR</h5>
-                                <h4>peacock tail bed</h4>
-                                <div class="gia">
-                                    399.000đ
-                                </div>
-                                <div class="gia2">
-                                    460.000đ
-                                </div>
-                            </div>
-                            <button class="heat">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="buy">
-                                <i class="fas fa-shopping-basket"> +1</i>
-                            </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
-                        </div></a>
+                                <button class="heat">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="buy">
+                                    <i class="fas fa-shopping-basket"> +1</i>
+                                </button>
+                                <button class="buy_now">
+                                    <i class="fas fa-shopping-basket"> Buy Now</i>
+                                </button>
+                            </div></a>
+                    </div>
+                <% } %>>
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/giuong-voi-go-g%E1%BB%A5-dep-600x600.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Wooden elephant triple bed</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/phuong-luoi-go-gu-can-oc-dep-600x600.jpg"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Phuong mahogany snail</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/giuong-sap-ba-thanh-go-gu-can-oc-sa-cudep-600x600.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Solid mahogany triple bed</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/giuong-cong-chua-long-san-can-oc-sa-cu-1-600x600.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Floor bed</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://dogophuongmien.vn/wp-content/uploads/2021/05/sap-ba-thanh-can-oc-sa-cu-1-600x600.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Triple bed of honey mahogany</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://noithatdogoviet.com/upload/sanpham/giuong-ngu-co-dien-go-go-do-cham-khac-doi-chim-cong.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>Modern bed model</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-4FCZWICJ1QnVnG29LKdJWBlygoeYeH1vA&usqp=CAU" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>aristocratic sculpture bed</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://sc02.alicdn.com/kf/HTB17fQOKamWBuNjy1Xaq6xCbXXar.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>classic royal bed</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
+<!--                </div>-->
+<!--                <div class="box_column">-->
+<!--                    <a href="#"><div class="image_box">-->
+<!--                            <figure><img src="https://cdn.muabannhanh.com/asset/frontend/img/gallery/2020/06/13/5ee43960885b3_1592015200.jpg" width="299" height="300"></figure>-->
+<!--                            <div class="name_product">-->
+<!--                                <h5>EGO WEAR</h5>-->
+<!--                                <h4>peacock tail bed</h4>-->
+<!--                                <div class="gia">-->
+<!--                                    399.000đ-->
+<!--                                </div>-->
+<!--                                <div class="gia2">-->
+<!--                                    460.000đ-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <button class="heat">-->
+<!--                                <i class="far fa-heart"></i>-->
+<!--                            </button>-->
+<!--                            <button class="buy">-->
+<!--                                <i class="fas fa-shopping-basket"> +1</i>-->
+<!--                            </button>-->
+<!--                            <button class="buy_now">-->
+<!--                                <i class="fas fa-shopping-basket"> Buy Now</i>-->
+<!--                            </button>-->
+<!--                        </div></a>-->
                 </div>
             </div>
             <!--het content   -->
