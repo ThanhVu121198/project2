@@ -128,3 +128,201 @@ app.get("/new9",function (req,res) {
 app.get("/new1",function (req,res) {
     res.render("new1");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------DATABASE----------------//
+var sql = require('mssql');
+
+
+// khai bao de ket noi database
+var mssql = require("mssql");
+var config = { // thong tin may chu
+    server: "localhost",
+    user:"sa",
+    password:"sa123",
+    database:"doan2",
+    stream: false,
+    port:1433,
+    options: {
+        trustedConnection: true,
+        encrypt: true,
+        enableArithAbort: true,
+        trustServerCertificate: true,
+    },
+};
+var ConnectionConfig = {
+    server: 'localhost',
+    authentication: {
+        type: 'default',
+        options: { userName: 'sa', password: 'sa123',database:"doan2"}
+    },
+
+    options: { encrypt:false }};
+
+mssql.connect(ConnectionConfig,function (err){
+    if(err) console.log(err)
+    else console.log("Connected")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+var sql = new mssql.Request();
+
+
+app.get("/",function (req,res){
+    res.send("banghe");
+});
+
+// app.get("/san-pham",function (req,res){
+//     var kw = req.query.keyword||"";
+//     var txt_sql = "SELECT TenSP FROM SanPham";
+//     sql.query(txt_sql,function (err,rs){
+//         if(err) res.send(err);
+//         else res.render("banghe",{
+//             SanPham:rs.recordset
+//         })
+//     })
+// });
+
+app.get("/san-pham",function (req,res){
+    var txt_sql = "SELECT * FROM dbo.SanPham";
+    sql.query(txt_sql,function (err,rows){
+        if(err) res.send(err);
+        else res.send(rows.recordset);
+    })
+});
+
+app.get("/san-pham1",function (req,res){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham Where Maloai = 1";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("banghe",{
+            SanPham:rs.recordset
+        })
+    })
+});
+
+
+
+app.get("/san-pham2",function (req,res){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham Where Maloai = 2";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("giuong",{
+            SanPham:rs.recordset
+        })
+    })
+});
+
+
+app.get("/san-pham5",function (req,res){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham Where Maloai = 5";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("dongho",{
+            SanPham:rs.recordset
+        })
+    })
+});
+
+app.get("/san-pham6",function (req,res){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham Where Maloai = 6";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("hoptrangsuc",{
+            SanPham:rs.recordset
+        })
+    })
+});
+
+
+
+
+app.get("/san-pham9",function (req,res){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham Where Maloai = 9";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("tuonggo2",{
+            SanPham:rs.recordset
+        })
+    })
+});
+
+
+app.get("/san-pham10",function (req,res){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham Where Maloai = 10";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("diaphongthuy",{
+            SanPham:rs.recordset
+        })
+    })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------- CHI TIET SAN PHAM------------------------------------------//
+app.get("/chi-tiet-sp",function (req,res){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("buy",{
+            SanPham:rs.recordset
+        })
+    })
+});
+
+
