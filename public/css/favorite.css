@@ -194,7 +194,7 @@ ul {
 }
 .header .group-account li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 .group-account li a{
     font-weight: bold;
@@ -289,24 +289,24 @@ a, .text-link {
 }
 
 .nav li:hover .subnav{
-    opacity: 1; visibility: visible; top: 100%;
+    opacity: 1; visibility: visible; top: 100%;text-decoration: none;
 }
 
 
 .nav  li  .battrang:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .tranh:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .mohinh:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .lua:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .dong:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 
 .nav > li > a:hover{
@@ -420,20 +420,19 @@ a, .text-link {
 }
 .nav_mobie_tong{
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     bottom: -10px;
-    width: 230px;
-    height: 1000px;
+    width: 393px;
     max-width: 100%;
-    background-color: white;
     transform: translateX(-100%);
     opacity: 0;
     transition: transform linear 0.2s;
     z-index: 2;
+    background-color: #e9e4d0;
 }
 .nav_mobie_tong ul{
-    margin-top: 150px;
+    /*margin-top: 150px;*/
 }
 .nav_mobie_tong li{
     text-decoration: none;
@@ -474,9 +473,11 @@ a, .text-link {
     opacity: 1;
 }
 
-.avata{
+.avata img{
     position: relative;
-    top: 40px;
+    width: 100%;
+    height: 182px;
+    background-color: #57371f;
 }
 .seach2{
     position: relative;
@@ -485,8 +486,8 @@ a, .text-link {
     width: 220px;
 }
 .nav_mobie li{
-    position: relative;
-    top: -90px;
+    /*position: relative;*/
+    /*top: -90px;*/
 }
 
 
@@ -541,7 +542,6 @@ a, .text-link {
         position: relative;
         top: 63px;
         left: -70px;
-        width: 400px;
     }
     .account{
         margin-left: -225px;
@@ -559,6 +559,9 @@ a, .text-link {
 
     }
 }
+
+
+
 /*--------------main-------------*/
 .main {
     z-index: 2;
@@ -687,7 +690,7 @@ a, .text-link {
 
 
 
-
+/*------------footer--------------*/
 .footer{
     width: 100%;
     background: #2d2621;
@@ -878,23 +881,28 @@ a, .text-link {
     .nav_bars-btn{
         display: block;
         font-size: 30px;
-        width: 30%;
-        border: 1px solid #333333;
+        width: 50px;
+        border: none;
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin: 4px 0;
-        border-radius: 50%;
+        margin: 5px 0;
+        border-radius: 6px;
+        background-color: #e9e4d0;
+        box-shadow: none;
     }
     .bottom-nav-bar-mobile{
         position: fixed;
         bottom: 0;
         width: 100%;
-        background: #fff;
         display: block;
         z-index: 9;
         height: 70px;
         top: auto !important;
+        background-color: #b18857;
+    }
+    .icon-mb i{
+        font-size: 34px;
     }
     .bottom-nav-bar-mobile .inner-group{
         display: flex;
@@ -910,6 +918,7 @@ a, .text-link {
     }
     .bottom-nav-bar-mobile .itembar .bar-menu{
         width: 100%;
+        margin-bottom: 0;
     }
     .itembar .bar-menu .icon-mb {
         height: 20px;
@@ -951,9 +960,48 @@ a, .text-link {
         padding-right: 10px;
         background-color: #b18857;
     }
+    /*.account_d-none1 .icon{*/
+    /*    display: none;*/
+    /*}*/
+    .header .group-account .account_d-none1 {
+        margin-left: 20px;
+        display: none;
+    }
+    .logo > img{
+        margin-top: -30px;
+        margin-left: 4px;
+    }
+    .header .group-account {
+        padding: 0;
+        text-align: right;
+        display: flex;
+        margin: 0;
+        padding-left: 193px;
+    }
+    .seach {
+        position: relative;
+        top: 63px;
+        left: -70px;
+        width: 0;
+    }
 }
-@media (max-width: 480px){
-
+@media (max-width: 300px){
+    .account_d-none1 .icon{
+        display: none;
+    }
+    .header .group-account {
+        padding: 0;
+        text-align: right;
+        display: flex;
+        margin: 0;
+        padding-left: 193px;
+    }
+    .seach {
+        position: relative;
+        top: 63px;
+        left: -70px;
+        width: 0;
+    }
 }
 
 

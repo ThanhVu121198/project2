@@ -22,7 +22,8 @@ html{
     height: 90px;
     padding: 15px 0;
     background-color: #2d2621;
-    border: 1px solid #2d2621
+    border: 1px solid #2d2621;
+    overflow: hidden;
 }
 .header > .container{
     width: 100%;
@@ -194,7 +195,7 @@ ul {
 }
 .header .group-account li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 .group-account li a{
     font-weight: bold;
@@ -290,24 +291,24 @@ a, .text-link {
 }
 
 .nav li:hover .subnav{
-    opacity: 1; visibility: visible; top: 100%;
+    opacity: 1; visibility: visible; top: 100%;text-decoration: none;
 }
 
 
 .nav  li  .battrang:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .tranh:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .mohinh:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .lua:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 .nav  li  .dong:hover .subnav_mini{
-    opacity: 1; visibility: visible; left: 100%;
+    opacity: 1; visibility: visible; left: 100%;text-decoration: none;
 }
 
 .nav > li > a:hover{
@@ -413,20 +414,19 @@ a, .text-link {
 
 .nav_mobie_tong{
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     bottom: -10px;
-    width: 230px;
-    height: 1000px;
+    width: 393px;
     max-width: 100%;
-    background-color: white;
     transform: translateX(-100%);
     opacity: 0;
     transition: transform linear 0.2s;
     z-index: 2;
+    background-color: #e9e4d0;
 }
 .nav_mobie_tong ul{
-    margin-top: 150px;
+    /*margin-top: 150px;*/
 }
 .nav_mobie_tong li{
     text-decoration: none;
@@ -467,9 +467,11 @@ a, .text-link {
     opacity: 1;
 }
 
-.avata{
+.avata img{
     position: relative;
-    top: 40px;
+    width: 100%;
+    height: 182px;
+    background-color: #57371f;
 }
 .seach2{
     position: relative;
@@ -478,8 +480,8 @@ a, .text-link {
     width: 100%;
 }
 .nav_mobie li{
-    position: relative;
-    top: -90px;
+    /*position: relative;*/
+    /*top: -90px;*/
 }
 
 
@@ -533,7 +535,6 @@ a, .text-link {
         position: relative;
         top: 63px;
         left: -70px;
-        width: 400px;
     }
     .account{
         margin-left: -225px;
@@ -549,6 +550,10 @@ a, .text-link {
     .logo{
         margin-left: -60px ;
 
+    }
+    .logo > img {
+        margin-top: -30px !important;
+        margin-left: 4px !important;
     }
 }
 /*-----------------MAIN----------------*/
@@ -1844,7 +1849,7 @@ a, .text-link {
     }
 }
 
-@media only screen and (min-width:400px) and (max-width: 723px) {
+@media only screen and (min-width:300px) and (max-width: 723px) {
     .nav {
         display: none;
     }
@@ -1866,9 +1871,11 @@ a, .text-link {
         position: relative;
         top: 63px;
         left: 50px;
-        width: 330px;
+        width: 100%;
     }
-
+    .account_d-none1 .icon{
+        display: none;
+    }
     .account {
         /*display: none;*/
         margin-left: -80px;
@@ -1886,7 +1893,8 @@ a, .text-link {
         position: relative;
         top: 40px;
         left: -100px;
-
+        margin-top: -30px;
+        margin-left: 4px;
     }
     .shop_new {
         display: none;
