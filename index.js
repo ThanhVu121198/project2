@@ -212,12 +212,30 @@ app.get("/",function (req,res){
 //         })
 //     })
 // });
+app.get("/san-pham",function (req,res){
+    // lay thong tin tu form tim kiem
+    var kw = req.query.keyword||"";
+    // can lay danh sach khach hang
+    var txt_sql = "select * from SanPham where TenSP like '%"+kw+"%';";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else res.render("product",{
+            SanPham:rs.recordset // array
+        })
+    })
+});
+
+
+
 
 app.get("/san-pham",function (req,res){
-    var txt_sql = "SELECT * FROM dbo.SanPham";
-    sql.query(txt_sql,function (err,rows){
+    var kw = req.query.keyword||"";
+    var txt_sql = "SELECT * FROM SanPham";
+    sql.query(txt_sql,function (err,rs){
         if(err) res.send(err);
-        else res.send(rows.recordset);
+        else res.render("product",{
+            SanPham:rs.recordset
+        })
     })
 });
 
@@ -477,24 +495,10 @@ app.get("/san-pham20",function (req,res){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //----------------------------------- CHI TIET SAN PHAM------------------------------------------//
+
+
+
 app.get("/chi-tiet-sp",function (req,res){
     var id = req.query.id;
     var txt_sql = "select * from SanPham where MaSP = "+id+";";
@@ -507,4 +511,52 @@ app.get("/chi-tiet-sp",function (req,res){
         }else res.status(404).send('Not found?');
     })
 })
+
+
+
+
+
+// ------------------------------------THÊM KHÁCH HÀNG-------------------------------------------------//
+
+
+
+app.get("/khach-hang",function (req,res){
+    // can lay danh sach khach hang
+    var txt_sql = "select * from KhachHang;";
+    sql.query(txt_sql,function (err,rs){ // callback
+        if(err) res.send(err);
+        else res.send(rs.recordset);// rows.recordset : 1 array, mỗi element là 1 object từ table
+    })
+});
+
+// them khach hang
+// 1. Tao giao dien form de nap thong tin khach hang
+app.get("/them-khach-hang",function (req,res){
+    res.render("home");
+})
+// 2. Tao routing nhận dữ liệu từ form gửi lên
+var bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post("/luu-khach-hang",function (req, res) {
+    var ten = req.body.HovaTen;
+    var dt = req.body.SDT;
+    var dc = req.body.DiaChi;
+    var em = req.body.Email;
+    var mt = req.body.MoTa;
+    var txt_sql = "insert into KhachHang(HovaTen,SDT,DiaChi,Email,MoTa) values(N'"+ten+"','"+dt+"',N'"+dc+"',N'"+em+"',N'"+mt+"')";
+    sql.query(txt_sql,function (err, rs) {
+        if(err) res.status(403).send('Errors');
+        else res.redirect("/home");
+    })
+})
+
+
+
+
+
+
+
+
 

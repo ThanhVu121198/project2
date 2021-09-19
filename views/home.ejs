@@ -38,6 +38,7 @@
                         <button class="buy">
                             <i style="margin-left: -5px;position: relative;left: 3px" class="fas fa-shopping-basket"> +1</i>
                         </button>
+
                         <button class="buy_now">
                             <i style="margin-left: -45px"  class="fas fa-shopping-basket"></i>
                             <p style="margin-left: 25px;margin-top: -19px;font-weight: 900">Buy Now</p>
@@ -628,27 +629,27 @@
                 <p><b>NO MORE WAIT</b></p>
             </div>
             <div class="order-content clearfix">
-                <form accept-charset='UTF-8' action='/contact' class='contact-form' method='post'>
+                <form accept-charset='UTF-8' action='/luu-khach-hang' class='contact-form' method='post'>
                     <input name='form_type' type='hidden' value='contact'>
                     <input name='utf8' type='hidden' value='✓'>
 
 
 
                     <label for="ContactFormName">Your Full Name</label>
-                    <input type="text"  required id="ContactFormName" class="input-full" name="contact[name]" placeholder="Your Full Name" value="">
+                    <input type="text"  required id="ContactFormName" class="input-full" name="HovaTen" placeholder="Your Full Name" value="">
 
                     <label for="ContactFormEmail">Your email address</label>
-                    <input type="email" required id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="Your email address" value="">
+                    <input type="email" required id="ContactFormEmail" class="input-full" name="Email" placeholder="Your email address" value="">
 
 
                     <label for="ContactFormPhone">Your Phone Number</label>
-                    <input type="tel"  required id="ContactFormPhone" class="input-full" name="contact[phone]" placeholder="Your Phone Mumber" pattern="[0-9\-]*" value="">
+                    <input type="tel"  required id="ContactFormPhone" class="input-full" name="SDT" placeholder="Your Phone Mumber" pattern="[0-9\-]*" value="">
 
                     <label for="ContactFormMessage">Content</label>
-                    <textarea rows="5" required id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="Content"></textarea>
+                    <textarea rows="5" required id="ContactFormMessage" class="input-full" name="MoTa" placeholder="Content"></textarea>
 
                     <div class="text-center">
-                        <button type="submit" class="btnType1" value="Gửi">Order Now</button>
+                        <button type="submit" onclick="alert('You Have Successfully Ordered')" class="btnType1" value="Gửi">Order Now</button>
                     </div>
                 </form></div>
         </div>
@@ -700,6 +701,66 @@
 
                     </div>
                 </marquee>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-nav-bar-mobile">
+    <div class="inner-group container">
+        <div class="itembar">
+            <div class="bar-menu">
+                <div class="icon-mb">
+                    <a href="#"><i class="fas fa-home"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="itembar">
+            <div class="bar-menu">
+                <!--                <div class="bar-menu">-->
+                <!--                    <div for="nav-mobile-input" class="icon-mb">-->
+                <!--                        <i class="fas fa-tasks"></i>-->
+                <!--                    </div>-->
+                <!--                    <a href="#">Category</a>-->
+                <!--                </div>-->
+                <label for="nav-mobile-input" class="bar-menu">
+                    <div style="font-weight: 800;font-size: 44px;;height: 20px;" class="icon-mb">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <!--                    <a style="font-weight: 800;font-size: 14px" href="#">Category</a>-->
+                </label>
+                <input type="checkbox" hidden name="" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav_overlay"></label>
+            </div>
+        </div>
+        <div class="itembar">
+            <div class="bar-menu">
+                <div class="bar-menu">
+                    <div class="icon-mb">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="itembar">
+            <div class="bar-menu">
+                <div class="bar-menu">
+                    <div class="icon-mb">
+                        <a href="#"><i class="fas fa-newspaper"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="itembar">
+            <div class="bar-menu">
+                <div class="bar-menu">
+                    <div class="icon-mb">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

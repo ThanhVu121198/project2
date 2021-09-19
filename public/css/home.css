@@ -10,7 +10,7 @@ body{
     color: #554f4f;
     overflow-x: hidden;
     width: 100%;
-    height: 2000px;
+    height: 1500px;
 }
 html{
     font-family: "Roboto",sans-serif;
@@ -22,8 +22,7 @@ html{
     height: 90px;
     padding: 15px 0;
     background-color: #2d2621;
-    border: 1px solid #2d2621;
-    overflow: hidden;
+    border: 1px solid #2d2621
 }
 .header > .container{
     width: 100%;
@@ -43,10 +42,12 @@ html{
     width: 20%;
     height: 100%;
     background-color: #2d2621;
+    position: relative;
+    left: 90px;
 }
 /*--------------SEACH--------------*/
 .seach{
-    width: 57%;
+    width: 58%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -57,7 +58,7 @@ html{
     height: 42px;
     background-color: #c89551;
     margin-top: 9px;
-    margin-left: 30px;
+    margin-left: 200px;
 }
 .header_search {
     position: relative;
@@ -224,7 +225,6 @@ a, .text-link {
 }
 
 
-
 /*----------THANH MENU--------------*/
 
 .header_nav{
@@ -236,14 +236,17 @@ a, .text-link {
     position: relative;
 }
 .header_nav .container{
-    width: 83.3%;
+    width: 100%;
     display: flex ;
     padding-left: 10px ;
     padding-right: 10px ;
     background-color: #b18857;
     /*margin-left: 117px;*/
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+}
+.nav {
+    margin-left: 120px;
 }
 .nav > li {
     display: inline-block;
@@ -331,24 +334,33 @@ a, .text-link {
 }
 .battrang .icon2{
     position: relative;
-    left: 130px;
+    /*left: 130px;*/
 }
 .tranh .icon2{
     position: relative;
-    left: 92px;
+    /*left: 90px;*/
 }
 .mohinh .icon2{
     position: relative;
-    left: 60px;
+    /*left: 57px;*/
 }
 .lua .icon2{
     position: relative;
-    left: 62px;
+    /*left: 60px;*/
 }
 .dong .icon2{
     position: relative;
-    left: 106px;
+    /*left: 105px;*/
 }
+
+
+.subnav .icon2{
+    float: right;
+}
+.subnav li > a{
+    padding-right: 5px
+}
+
 .subnav1 li{
     position: relative;
 }
@@ -393,7 +405,7 @@ a, .text-link {
     height: 40px;
     color: black;
     display: none;
-    margin-left: 0;
+    margin-left: 0%;
     background-color: #ffffff;
 
 }
@@ -411,7 +423,6 @@ a, .text-link {
     background-color: rgba(0, 0, 0, 0.3);
     animation: fadeIn linear 0.2s;
 }
-
 .nav_mobie_tong{
     position: fixed;
     top: 0;
@@ -477,7 +488,7 @@ a, .text-link {
     position: relative;
     top: 70px;
     left: 5px;
-    width: 100%;
+    width: 220px;
 }
 .nav_mobie li{
     /*position: relative;*/
@@ -488,15 +499,16 @@ a, .text-link {
 /*------------------SLIDER--------------------*/
 
 
-.slider_header{
-    width: 100%;
-    height: 630px;
-    background-color: #ffffff;
-    background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -20px;
-}
+
+/*.slider{*/
+/*    width: 100%;*/
+/*    height: 500px;*/
+/*    background-color: #323c42;*/
+/*    background-image: url("https://bizweb.dktcdn.net/100/434/926/themes/832778/assets/slider_1.jpg?1630049520862");*/
+/*}*/
+
+
+
 
 @keyframes fadeIn {
     from{
@@ -547,15 +559,23 @@ a, .text-link {
     .keys{
         display: none;
     }
-    .logo{
-        margin-left: -60px ;
-
-    }
-    .logo > img {
-        margin-top: -30px !important;
-        margin-left: 4px !important;
-    }
 }
+
+
+/*------------------SLIDER--------------------*/
+
+
+.slider_header{
+    width: 100%;
+    height: 630px;
+    background-color: #ffffff;
+    background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+}
+
+
 /*-----------------MAIN----------------*/
 .main{
     width: 100%;
@@ -597,7 +617,7 @@ a, .text-link {
     background-color: #e9e4d0;
 }
 .image_box img {
-    width: 299px;
+    width: 100%;
     height: 330px;
 }
 .name_product{
@@ -1039,7 +1059,7 @@ label{
 .sale{
     width: 100%;
     height: 800px;
-    background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/06/background-04.jpg?id=271");
+
     background-size: cover;
 }
 .sale .container{
@@ -1182,7 +1202,7 @@ label{
 .mau{
     width: 100%;
     height: 100%;
-    background-color: rgba(71, 71, 71, 0.8);
+    background-color: rgba(80, 70, 70, 0.8);
 }
 .btn {
     background-color: white;
@@ -1533,7 +1553,6 @@ a, .text-link {
 /*---------------FOOTER----------------*/
 .footer{
     width: 100%;
-    height: 410px;
     background: #2d2621;
     padding: 45px 0 0;
 }
@@ -1637,6 +1656,213 @@ a, .text-link {
     text-decoration: none;
 }
 
+
+
+#tnContact {
+    max-width: 230px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    left: 1450px;
+    z-index: 10;
+}
+#tnContact li {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+#tnContact li a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 99px;
+    align-items: center;
+    justify-content: center;
+}
+#tnContact li a i {
+    font-size: 18px;
+    color: #fff;
+}
+#tnContact li .label {
+    position: relative;
+    visibility: hidden;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 0 99px 99px 0;
+}
+#tnContact li .iconzalo img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.iconfb, .label.fb {
+    background: #3b5999;
+}
+.iconzalo, .label.zalo {
+    background: #008df2;
+}
+.iconsms, .label.sms {
+    background: #00c300;
+}
+.iconcall, .label.call {
+    background: #383838;
+    animation: ld-jingle 0.8s linear infinite;
+}
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+}
+.bottom-nav-bar-mobile{
+    display: none;
+}
+/*-------Responsive Mobile---------*/
+.bottom-nav-bar-mobile{
+    display: none;
+}
+.seach2{
+    display: none;
+}
+@media (max-width: 991px){
+    .nav {
+        display: none;
+    }
+    .nav_bars-btn{
+        display: block;
+        font-size: 30px;
+        width: 50px;
+        border: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+        border-radius: 6px;
+        background-color: #e9e4d0;
+        box-shadow: none;
+    }
+    .bottom-nav-bar-mobile{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        z-index: 9;
+        height: 70px;
+        top: auto !important;
+        background-color: #b18857;
+    }
+    .icon-mb i{
+        font-size: 34px;
+    }
+    .bottom-nav-bar-mobile .inner-group{
+        display: flex;
+    }
+    .bottom-nav-bar-mobile .itembar{
+        width: calc(100% / 5);
+        display: inline-flex;
+        height: 60px;
+        margin: 0 5px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottom-nav-bar-mobile .itembar .bar-menu{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .itembar .bar-menu .icon-mb {
+        height: 20px;
+        font-size: 18px;
+    }
+    .bottom-nav-bar-mobile .itembar a, .bottom-nav-bar-mobile .itembar span {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .bottom-nav-bar-mobile .itembar a:hover{
+        color: #ad875a;
+    }
+    .seach_box{
+        display: none;
+    }
+    .header_search {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background-color: #b18857;
+        padding-left: 54px;
+        padding-top: 5px;
+        border: none;
+    }
+    .seach2 {
+        display: block;
+        top: 70px;
+        left: 5px;
+        width: 100%;
+        position: inherit;
+    }
+    .header_nav .container {
+        width: 100%;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #b18857;
+    }
+    /*.account_d-none1 .icon{*/
+    /*    display: none;*/
+    /*}*/
+    .header .group-account .account_d-none1 {
+        margin-left: 20px;
+        display: none;
+    }
+    .logo > img{
+        margin-top: -30px;
+        margin-left: 4px;
+    }
+    .header .group-account {
+        padding: 0;
+        text-align: right;
+        display: flex;
+        margin: 0;
+        padding-left: 193px;
+    }
+    .seach {
+        position: relative;
+        top: 63px;
+        left: -70px;
+        width: 0;
+    }
+}
+@media (max-width: 300px){
+    .account_d-none1 .icon{
+        display: none;
+    }
+    .header .group-account {
+        padding: 0;
+        text-align: right;
+        display: flex;
+        margin: 0;
+        padding-left: 193px;
+    }
+    .seach {
+        position: relative;
+        top: 63px;
+        left: -70px;
+        width: 0;
+    }
+}
 
 
 #tnContact {
@@ -1890,325 +2116,6 @@ a, .text-link {
 
 
 
-
-
-
-
-
-
-
-
-@keyframes fadeIn {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@media only screen and (min-width: 720px)and (max-width: 1211px) {
-    /*.nav_bars-btn{*/
-    /*    display: block;*/
-    /*}*/
-    /*.nav{*/
-    /*    display: none;*/
-    /*}*/
-    .tuvan{
-        display: none;
-    }
-    .seach{
-        margin-left: 50px;
-    }
-    .account_d-none a{
-        text-align: center;
-    }
-    .account_d-none1 a{
-        text-align: center;
-    }
-    .cart-drop a{
-        text-align: center;
-    }
-
-    .shop_box{
-        width: 100%;
-    }
-    .chan{
-        display: none;
-    }
-    .image_box{
-        width: 20%;
-        height: 450px;
-        margin-left: -90px;
-    }
-   .shop_box .image_box{
-       width: 260px;
-       margin-left: 10px;
-       position: relative;
-       left: -90px;
-
-   }
-    .name_product h5{
-        font-size: 10px;
-    }
-    .name_product h4{
-        font-size: 15px;
-    }
-    .buy_now{
-    }
-    .box_new4{
-        position: relative;
-        left: 45px;
-    }
-    .shop_new{
-        width: 79% ;
-        height: 500px;
-        margin-top: -450px;
-        margin-left: 90px;
-    }
-    .font_product{
-        margin-left: 50px;
-    }
-    .giamgia{
-        position: relative;
-        top: -450px;
-    }
-    .title{
-        position: relative;
-        top: -420px;
-    }
-    .phu_de::before{
-        display: none;
-    }
-    .box_new1 .click {
-        position: relative;
-        left: -10px;
-    }
-    .box_new2 .click {
-        position: relative;
-        left: 80px;
-    }
-    .box_new3 .click {
-        position: relative;
-        left: 80px;
-    }
-    #countdown{
-        display: none;
-    }
-    .giamgia{
-        margin-top: 50px;
-        margin-left: -110px;
-    }
-    .more{
-        margin-left: 500px;
-    }
-    .covid{
-       position: relative;
-        top: -390px;
-        margin-left: 120px;
-    }
-    .max{
-        position: relative;
-        top: -360px;
-        margin-left: -90px;
-    }
-    .top_product .image_box{
-        width: 400px;
-        position: relative;
-        left: 100px;
-    }
-    .section_hotkey{
-        position: relative;
-        top: -300px;
-    }
-    .title h2{
-        position: relative;
-        left: -80px;
-    }
-    .footer .col-lg-4{
-        position: relative;
-        left: 20px;
-    }
-    .col-lg-3{
-       position: relative;
-        left: 20px;
-    }
-    .tintuc{
-        position: relative;
-        top: -300px;
-    }
-    .cooperate{
-        position: relative;
-        top: -300px;
-    }
-    .main{
-        flex-direction: column;
-        height: 4570px;
-    }
-    .header_nav{
-        background-color: white;
-    }
-    .header_nav .container{
-        background-color: white;
-    }
-    .footer{
-        height: 600px;
-    }
-    .shop_new{
-        display: none;
-    }
-}
-@media only screen and (max-width: 1102px){
-    .shop_new {
-        display: none;
-    }
-    .header_nav{
-        background-color: white;
-    }
-    .header_nav .container{
-        background-color: white;
-    }
-}
-
-@media only screen and (min-width:300px) and (max-width: 723px) {
-    .nav {
-        display: none;
-    }
-    .header_nav{
-        background-color: white;
-        /*display: none;*/
-    }
-    .header_nav .container{
-        background-color: white;
-    }
-    .tuvan {
-        display: none;
-    }
-
-    .slider_header {
-        margin-top: 50px;
-    }
-    .seach {
-        position: relative;
-        top: 63px;
-        left: 50px;
-        width: 100%;
-    }
-    .account_d-none1 .icon{
-        display: none;
-    }
-    .account {
-        /*display: none;*/
-        margin-left: -80px;
-
-    }
-    .account a{
-        display: none;
-    }
-
-    .keys {
-        display: none;
-    }
-
-    .logo img {
-        position: relative;
-        top: 40px;
-        left: -100px;
-        margin-top: -30px;
-        margin-left: 4px;
-    }
-    .shop_new {
-        display: none;
-    }
-    #countdown{
-        display: none;
-    }
-    .nav_bars-btn{
-        display: block;
-        position: relative;
-        left: -110px;
-    }
-    .font_product{
-        margin-left: 3px;
-    }
-    .product_new{
-        height: 800px;
-    }
-    .chan{
-        display: none;
-    }
-    .shop_box{
-        display: inline;
-    }
-    .image_box{
-        width: 300px;
-        margin-top: -12px;
-        position: relative;
-        left: 80px;
-    }
-    .sale h2{
-        margin-top: -40px;
-        position: relative;
-        top: -60px;
-        left: -140px;
-    }
-    .giamgia{
-        display: flex;
-        margin-left: -258px;
-        overflow-y: hidden;
-        overflow-x: auto;
-    }
-    .more{
-        display: none;
-    }
-    .max{
-        display: none;
-    }
-    .covid{
-        position: relative;
-        left: -140px;
-        width: 430px;
-    }
-    .tintuc{
-        flex-direction: column;
-    }
-    .footer{
-        height: 1100px;
-    }
-    .list-menu{
-        position: relative;
-        left: 50px;
-    }
-    .title-menu{
-        position: relative;
-        left: 50px;
-    }
-    .col-lg-4{
-        position: relative;
-        left: 50px;
-    }
-    .col-lg-4 h4{
-        position: relative;
-        left: 1px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #clockdiv{
     font-family: sans-serif;
     color: #fff;
@@ -2237,6 +2144,43 @@ a, .text-link {
     padding-top: 5px;
     font-size: 16px;
 }
+
+
+
+
+
+@media (max-width:1366px) {
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .product_new {
+        width: 100%;
+        height: 1100px;
+    }
+
+    .product_new .image_box {
+        width: 250px;
+        position: relative;
+        left: -30px;
+    }
+
+    .chan {
+        position: relative;
+        top: 0px
+    }
+
+    .more1 {
+        margin-top: 630px;
+        margin-left: 400px;
+    }
+}
+
+
+
+
+
 
 
 
