@@ -24,20 +24,19 @@
 </div>
 <div class="container">
     <div class="main">
-        <% for (var i=0;i<SanPham.length;i++){ %>
         <div class="buys_main">
             <div class="buys_left">
-                <figure><img src="<%= SanPham[i].Image %>"></figure>
+                <figure><img src="<%= SanPham.Image %>"></figure>
             </div>
             <div class="buys_right">
-                <h3><b class="buys_name"><%= SanPham[i].TenSP %></b></h3>
+                <h3><b class="buys_name"><%= SanPham.TenSP %></b></h3>
                 <div class="heat_like">
                     <i class="fas fa-heart"></i>
                 </div>
                 <h4 class="buys_brand">Brand:Bat Trang</h4>
                 <div class="price">
-                    <h2 class="now_price">Price:1000.000đ</h2>
-                    <h5 class="old_price">1000.000đ</h5>
+                    <h2 class="now_price">Price:399.000.000đ</h2>
+                    <h5 class="old_price">460.000.000đ</h5>
                 </div>
                 <div class="box_number">
                     <div class="left_input"><h3><i>quantity :</i></h3></div>
@@ -55,7 +54,6 @@
                 </div>
             </div>
         </div>
-        <% } %>>
         <div class="tab">
             <!-- Nav tabs -->
             <ul class="nav  nav-tabs" role="tablist" style="padding:2px">

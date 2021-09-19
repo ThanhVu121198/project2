@@ -137,7 +137,7 @@
             <div class="box_content">
                 <% for (var i=0;i<SanPham.length;i++){ %>
                     <div class="box_column">
-                        <a href="#"><div class="image_box">
+                        <a href="/chi-tiet-sp?id=<%= SanPham[i].MaSP %>"><div class="image_box">
                                 <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
                                 <div class="name_product">
                                     <h5>EGO WEAR</h5>
@@ -155,12 +155,12 @@
                                 <button class="buy">
                                     <i class="fas fa-shopping-basket"> +1</i>
                                 </button>
-                                <button class="buy_now">
-                                    <i class="fas fa-shopping-basket"> Buy Now</i>
-                                </button>
+                                <button class="buy_now"><a href="/chi-tiet-sp?id=<%= SanPham[i].MaSP %>">
+                                        <i class="fas fa-shopping-basket"> Buy Now</i>
+                                    </a></button>
                             </div></a>
                     </div>
-                <% } %>>
+                <% } %>
 
                 </div>
             </div>

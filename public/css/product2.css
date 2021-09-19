@@ -729,6 +729,13 @@ figure{
 .breadcrumb{
     background-color: white;
 }
+.buy_now a{
+    text-decoration: none;
+    color: #ffc986;
+}
+.box_column a{
+    text-decoration: none;
+}
 /*mobie*/
 @media only screen and (max-width:739px){
     .main{
