@@ -134,19 +134,18 @@
                 <hr>
             </div>
             <!--      đây là phần content -->
-            <div class="box_content">
-
+            <% for (var i=0;i<SanPham.length;i++){ %>
                 <div class="box_column">
-                    <a href="#"><div class="image_box">
-                            <figure><img src="https://mynghephuloi.com/wp-content/uploads/2018/09/DSC_5284-1.jpg" width="299" height="300"></figure>
+                    <a href="/chi-tiet-sp?id=<%= SanPham[i].MaSP %>"><div class="image_box">
+                            <figure><img src="<%= SanPham[i].Image %>" width="299" height="300"></figure>
                             <div class="name_product">
                                 <h5>EGO WEAR</h5>
-                                <h4>Maitreya blood dragon statue</h4>
+                                <h4><%= SanPham[i].TenSP %></h4>
                                 <div class="gia">
-                                    399.000đ
+                                    399.000.000đ
                                 </div>
                                 <div class="gia2">
-                                    460.000đ
+                                    460.000.000đ
                                 </div>
                             </div>
                             <button class="heat">
@@ -155,11 +154,12 @@
                             <button class="buy">
                                 <i class="fas fa-shopping-basket"> +1</i>
                             </button>
-                            <button class="buy_now">
-                                <i class="fas fa-shopping-basket"> Buy Now</i>
-                            </button>
+                            <button class="buy_now"><a href="/chi-tiet-sp?id=<%= SanPham[i].MaSP %>">
+                                    <i class="fas fa-shopping-basket"> Buy Now</i>
+                                </a></button>
                         </div></a>
                 </div>
+            <% } %>
 
             </div>
             <!--het content   -->

@@ -497,7 +497,7 @@ a, .text-link {
 /*-----------------MAIN----------------*/
 .main{
     width: 100%;
-    height: 4100px;
+    height: 4400px;
     position: relative;
     z-index: 1;
     background-color: #e9e4d0;
@@ -827,10 +827,156 @@ figure{
 }
 
 
+.online{
+    height: 672px;
+    width: 100%;
+    margin-top: 30px;
+    /*height: 300px;*/
+    padding: 50px 0;
+    background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.ship{
+    width: 560px;
+    height: 572px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 30px;
+    left: 200px;
+    border-radius: 10px;
+}
+.ship2{
+    font-size: 32px;
+    color: #c0c906;
+}
+.ship1 p{
+    color: white;
+    font-size:28px;
+}
+.ship1{
+    text-align: center;
+}
+
+
+form {
+    display: block;
+    margin-top: 0;
+}
+label[for] {
+    cursor: pointer;
+}
+input.input-full, textarea.input-full, select.input-full {
+    width: 93%;
+}
+textarea {
+    min-height: 100px;
+}
+input, textarea, select {
+    border: 1px solid #ffffff;
+    max-width: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+button, input, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input, textarea, button, select {
+    margin: 0;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+input, textarea, button, select {
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "UTMAvo", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333333;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+#home-order .order-content input, #home-order .order-content textarea {
+    outline: 0px;
+    margin-bottom: 5px;
+}
+.order-content label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #582727;
+    color: white;
+}
+.input-full{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+label{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.congty{
+    height: 431px;
+    width: 100%;
+}
+.title_congty{
+    height: 371px;
+    width: 96%;
+    display: flex;
+}
+.congtygo{
+    height: 225px;
+    width: 570px;
+    position: relative;
+    top: 70px;
+    left: -30px;
+}
+.videocongty{
+    height: 225px;
+    width: 570px;
+    position: relative;
+    top: 70px;
+    left: 30px;
+}
+
+.buy_now{
+}
+.buy_now p{
+    font-family: "Roboto",sans-serif;
+    font-size: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sale{
     width: 100%;
     height: 800px;
-    margin-top: 1200px;
     background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/06/background-04.jpg?id=271");
     background-size: cover;
 }
@@ -961,13 +1107,87 @@ figure{
     margin-top: 0;
     margin-left:10px;
 }
+
+.giaohang{
+    margin-top: 700px;
+    width: 100%;
+    height: 400px;
+    background-image: url("http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-4.jpg");
+    background-size: cover;
+
+
+}
+.mau{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 71, 71, 0.8);
+}
+.btn {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.more3{
+    width: 150px;
+    height: 40px;
+    text-decoration: none ;
+    margin-left: 530px  ;
+    border-radius: 5px;
+    background-color: #57371f;
+    position: relative;
+    top: 40px;
+
+}
+.more3 > h5{
+    position: absolute;
+    left: 42px;
+    line-height: 23px;
+    color: #eead5a;
+    display: block;
+}
+.more3:hover > h5{
+    color: #eec797;
+}
+.more1{
+    width: 150px;
+    height: 40px;
+    text-decoration: none ;
+    margin-left: 670px ;
+    border-radius: 5px;
+    background-color: #57371f;
+    position: relative;
+    top: -80px;
+}
+
+
+.more1 > h5{
+    position: absolute;
+    left: 42px;
+    line-height: 23px;
+    color: #eead5a;
+    display: block;
+}
+.more1:hover > h5{
+    color: #eec797;
+}
 .more{
     width: 150px;
     height: 40px;
     position: relative;
     top: 480px;
     text-decoration: none ;
-    margin-left: 550px ;
+    margin-left: 540px ;
     border-radius: 5px;
     background-color: #57371f;
 }
@@ -983,11 +1203,11 @@ figure{
 }
 
 .heat ,.buy,.buy_now{
-    display: none;
     float: left;
     margin-left: 10px;
     position: relative;
     left: -10px;
+    display: none;
 }
 .shop_box .image_box:hover .heat{
     display: block;
@@ -1051,9 +1271,10 @@ video {
     margin-top: -605px;
 }
 .top_pr h3{
-    margin-left: 300px;
     color: #504037;
-    margin-top: 30px;
+    position: relative;
+    top: -30px;
+
 }
 .top_pr h3:hover{
     color: #c89551;
@@ -1062,10 +1283,9 @@ video {
     width: 100% ;
     height: 470px;
     margin-top: 20px;
-    background-color: #ffffff;
     z-index: 2;
     position: relative;
-    left: -30px;
+    left: -455px;
 }
 .top_product .image_box{
     width: 302px;
@@ -1203,7 +1423,7 @@ a, .text-link {
 .slider{
     width: 110%;
     height: 100px;
-    background-color: #ffffff;
+    background-color: #e9e4d0 ;
     display: flex;
     margin-left: -40px;
 
@@ -1602,7 +1822,7 @@ a, .text-link {
     }
 }
 .cooperate{
-   background-color: white;
+   background-color: #e9e4d0;
 }
 
 
