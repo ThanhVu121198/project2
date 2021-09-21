@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto",sans-serif;
+    /*vertical-align: middle;*/
 }
 body{
     font-size: 14px;
@@ -868,6 +869,9 @@ a, .text-link {
     display: none;
 }
 /*-------Responsive Mobile---------*/
+.btn {
+    background-color: white;
+}
 .bottom-nav-bar-mobile{
     display: none;
 }
@@ -968,8 +972,8 @@ a, .text-link {
         display: none;
     }
     .logo > img{
-        margin-top: -30px;
-        margin-left: 4px;
+        margin-top: -32px ;
+        margin-left: -30px ;
     }
     .header .group-account {
         padding: 0;
