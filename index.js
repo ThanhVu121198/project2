@@ -535,7 +535,7 @@ app.get("/khach-hang",function (req,res){
 app.get("/them-khach-hang",function (req,res){
     res.render("home");
 })
-// 2. Tao routing nhận dữ liệu từ form gửi lên
+// 2. Tao routing nhận dữ liệu từ form gửilên
 var bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
