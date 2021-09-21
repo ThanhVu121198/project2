@@ -526,7 +526,7 @@ app.get("/khach-hang",function (req,res){
     var txt_sql = "select * from KhachHang;";
     sql.query(txt_sql,function (err,rs){ // callback
         if(err) res.send(err);
-        else res.send(rs.recordset);// rows.recordset : 1 array, mỗi element là 1 object từ table
+        else res.send(rs.recordset);// rows.recordset : 1 array, mỗi element là 1 object từ able
     })
 });
 
