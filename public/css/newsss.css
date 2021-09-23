@@ -557,7 +557,6 @@ a, .text-link {
         display: none;
     }
     .logo{
-        margin-left: -60px ;
 
     }
 }
@@ -574,7 +573,7 @@ a, .text-link {
     float: left;
     width: 100%;
     background: #2d2621;
-    padding: 45px 0 0;
+    padding: 45px;
 }
 .row{
     margin-left: -50px;
@@ -888,6 +887,7 @@ a, .text-link {
         width: 0;
     }
 }
+
 /*main*/
 .main{
     margin-top:100px;
@@ -972,8 +972,8 @@ a, .text-link {
 }
 .element{
     padding-left:20px;
+    float: left;
     width: 50%;
-    float: right;
     padding-bottom: 30px;
 }
 .element :hover{
