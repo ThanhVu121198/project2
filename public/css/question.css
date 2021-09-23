@@ -558,16 +558,17 @@ a, .text-link {
 .slider_main{
     position: relative;
     top: -30px;
+    font-weight: 800;
 }
 
 
 
 /*---------------MAIN--------------*/
 .main{
-    margin-left: -125px;
     position: relative;
     z-index: 1;
     height: 1160px;
+    margin-left: 32px;
 }
 .breadcrumb{
     background-color: white;
