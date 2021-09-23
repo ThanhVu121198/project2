@@ -2,143 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>News Tips</title>
+    <title>News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/news_small.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/newsss.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4/css/all.css">
 </head>
 <body>
 <!-------------HEADER-------------->
-<%- include("header")%>
+<div class="header">
+    <%- include("header")%>
 
-<%- include("nav")%>
-
-<!------------main--------------->
-<div class="page">
-    <div class="slider_main" style="width: 100% ;height: 400px;background-image: url('http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-4.jpg');float: left;margin-top: 30px ">
-        <h1 style="text-align: center;line-height: 400px;color: #e9e4d0;font-size: 50px;text-transform: capitalize">News Tips</h1>
-    </div>
-    <div class="container">
-        <div>
-            <div class="row">
-                <div class="col-lg-3 col-12 order-2 order-lg-1">
-                    <div class="aside-item">
-                        <div class="main">
-                            <div class="top_list">
-                                <p ><b>product list</b></p>
-                            </div>
-                            <div class="list_box">
-                                <a class="name_list"><b>interior</b></a>
-                                <ul>
-                                    <li class ="list"><a href="#"> wooden tables and chairs</a></li>
-                                    <li class="list"><a href="#">wooden bed</a></li>
-                                    <li class="list"><a href="#"> wooden collapset</a></li>
-                                    <li class="list"><a href="#">wooden cabinets</a></li>
-                                </ul>
-                                <a class="name_list"><b>decorations</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">clock</a></li>
-                                    <li class="list"><a href="#">jewelry box</a></li>
-                                    <li class="list"><a href="#">candy box</a></li>
-                                    <li class="list"><a href="#">tea tray</a></li>
-                                </ul>
-                                <a class="name_list"><b>feng shui items</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">feng shui statue</a></li>
-                                    <li class="list"><a href="#">feng shui disk</a></li>
-                                    <li class="list"><a href="#">lucky pot</a></li>
-                                    <li class="list"><a href="#">feng shui jade</a></li>
-                                </ul>
-                                <a class="name_list"><b>bamboo handmade</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">Fashion handmade</a></li>
-                                    <li class="list"><a href="#">decorative accessories</a></li>
-                                    <li class="list"><a href="#">Bamboo furniture</a></li>
-                                    <li class="list"><a href="#">replacing plastic products</a></li>
-                                </ul>
-                                <a class="name_list"><b>Stonee</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">stone paintings</a></li>
-                                    <li class="list"><a href="#">stone statue</a></li>
-                                    <li class="list"><a href="#">Penjing</a></li>
-                                    <li class="list"><a href="#">accessories</a></li>
-                                </ul>
-                            </div>
-                            <div class="aside-blog">
-                                <div class="hot_list">
-                                    <p><b>Related News</b></p>
-                                </div>
-                                <div class="hot_box">
-                                    <div class="hot_box1">
-                                        <p>Hoi An opens the 3rd handicraft market night<br>
-                                            <a href="/new1">See more</a>
-                                            <i class="fas fa-eye"></i></p>
-                                    </div>
-                                    <hr>
-                                    <div class="hot_box1">
-                                        <p>Water hyacinth knitting abroad in Ninh Binh<br>
-                                            <a href="/new2">See more</a>
-                                            <i class="fas fa-eye"></i></p>
-                                    </div>
-                                    <hr>
-                                    <div class="hot_box1">
-                                        <p>Vietnam house - where the fine arts converge<br>
-                                            <a href="/new3">See more</a>
-                                            <i class="fas fa-eye"></i></p>
-                                    </div>
-                                    <hr>
-                                    <div class="hot_box1">
-                                        <p>Travel the world looking for handicrafts<br>
-                                            <a href="/new5">See more</a>
-                                            <i class="fas fa-eye"></i></p>
-                                    </div>
-                                    <hr>
-                                    <div class="hot_box1">
-                                        <p>Learn about handicraft products at Vietnam House<br>
-                                            <a href="/new4">See more</a>
-                                            <i class="fas fa-eye"></i></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <%- include("nav")%>
+</div>
+<div class="slider_main" style="width: 100% ;height: 400px;background-image: url('http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-4.jpg');float: left;margin-top: 30px ">
+    <h1 style="text-align: center;line-height: 400px;color: #e9e4d0;font-size: 50px;text-transform: capitalize">news</h1>
+</div>
+<!--'phan main-->
+<div class="container">
+    <div class="main">
+        <div class="list_product">
+            <div class="top_list">
+                <p ><b>product list</b></p>
+            </div>
+            <div class="list_box">
+                <div class="list_box">
+                    <a class="name_list" href="#"><b>interior</b></a>
+                    <ul>
+                        <li class ="list"><a href="/san-pham1"> wooden tables and chairs</a></li>
+                        <li class="list"><a href="/san-pham2">wooden bed</a></li>
+                        <li class="list"><a href="/san-pham3"> wooden collapset</a></li>
+                        <li class="list"><a href="/san-pham4">wooden cabinets</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>decorations</b></a>
+                    <ul>
+                        <li class="list"><a href="/san-pham5">clock</a></li>
+                        <li class="list"><a href="/san-pham6">jewelry box</a></li>
+                        <li class="list"><a href="/san-pham7">candy box</a></li>
+                        <li class="list"><a href="/san-pham8">tea tray</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>feng shui items</b></a>
+                    <ul>
+                        <li class="list"><a href="/san-pham9">feng shui statue</a></li>
+                        <li class="list"><a href="/san-pham10">feng shui disk</a></li>
+                        <li class="list"><a href="/san-pham11">lucky pot</a></li>
+                        <li class="list"><a href="/san-pham12">feng shui jade</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>bamboo handmade</b></a>
+                    <ul>
+                        <li class="list" href="#"><a href="/san-pham13">Fashion handmade</a></li>
+                        <li class="list" href="#"><a href="/san-pham14">decorative accessories</a></li>
+                        <li class="list"><a href="/san-pham15">Bamboo furniture</a></li>
+                        <li class="list"><a href="/san-pham16">replacing plastic products</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>Stone</b></a>
+                    <ul>
+                        <li class="list"><a href="/san-pham17">stone paintings</a></li>
+                        <li class="list"><a href="/san-pham18">stone statue</a></li>
+                        <li class="list"><a href="/san-pham19">Penjing</a></li>
+                        <li class="list"><a href="/san-pham20">accessories</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-9 col-12 order-1 order-lg-2">
-                    <div class="content">
-                        <div  class="Content1"><a href="/new7">
-                                <img src="https://blog.goxanh.vn/wp-content/uploads/5-cach-ho-bien-xe-dap-cu-ky-thanh-noi-bung-sang-khong-gian-3.jpg"/>
-                                <h3>5 Ways to "Make" Old Bicycles Brighten Up Space</h3>
-                                <p>Old cars have great values that you don't expect, sometimes we have a habit of throwing away old things that no one is interested in keeping them. Usually, old bicycles will be taken....</p></a>
-                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                <div class="main_hot">
+                    <div class="hot_list">
+                        <p><b>Related News</b></p>
+                    </div>
+                    <div class="hot_box">
+                        <div class="hot_box1">
+                            <p>Hoi An opens the 3rd handicraft market night<br>
+                                <a href="/new1">See more</a>
+                                <i class="fas fa-eye"></i></p>
                         </div>
-
-                        <div  class="Content1"><a href="/new8">
-                                <img src="https://blog.goxanh.vn/wp-content/uploads/muon-kieu-sang-tao-cung-tre-nua-6.jpg"/>
-                                <h3>All Kinds of Creation With Bamboo</h3>
-                                <p>Bamboo is the perfect choice if you want to add wood tones to your interior because they soften the atmosphere in your home and make it more comfortable and inviting....</p></a>
-                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Water hyacinth knitting abroad in Ninh Binh<br>
+                                <a href="/new2">See more</a>
+                                <i class="fas fa-eye"></i></p>
                         </div>
-
-                        <div  class="Content1"><a href="/new9">
-                                <img src="https://blog.goxanh.vn/wp-content/uploads/nhung-mon-do-trang-tri-nha-tu-hinh-luc-giac-bat-mat-8.jpg"/>
-                                <h3>Eye-catching Hexagonal Home Decorations</h3>
-                                <p>The hexagon, aka honeycomb shape has really gained popularity when it comes to interior design. If you are a fan of geometric patterns then scroll down and check out these....</p></a>
-                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Vietnam house - where the fine arts converge<br>
+                                <a href="/new3">See more</a>
+                                <i class="fas fa-eye"></i></p>
+                        </div>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Travel the world looking for handicrafts<br>
+                                <a href="/new5">See more</a>
+                                <i class="fas fa-eye"></i></p>
+                        </div>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Learn about handicraft products at Vietnam House<br>
+                                <a href="/new4">See more</a>
+                                <i class="fas fa-eye"></i></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <!--    phần content-->
+        <div class="content">
+            <div class="element">
+                <a href="/new7">
+                    <img src="https://image.thanhnien.vn/2048/uploaded/congthang/2016_02_23/1_bqvt.jpg"/>
+                    <h3>Learn about handicraft products at Vietnam House</h3></a>
+                <p>Vietnam house, designed by architect Vo Trong Nghia with the main materials of wood and bamboo, has just opened to visitors at 187 Nguyen Van Huong, Thao Dien Ward, District 2, Ho Chi Minh City....</p>
+                <p class="icbot">15/08/2021 - by: Ego Creative <i class="fas fa-thumbs-up"></i></p>
+            </div>
 
-<!-------footer----------->
+            <div class="element">
+                <a href="/new8">
+                    <img src="https://blog.goxanh.vn/wp-content/uploads/5-cach-ho-bien-xe-dap-cu-ky-thanh-noi-bung-sang-khong-gian-3.jpg"/>
+                    <h3>5 Ways to "Make" Old Bicycles Brighten Up Space</h3></a>
+                <p>Old cars have great values that you don't expect, sometimes we have a habit of throwing away old things that no one is interested in keeping them. Usually, old bicycles will be taken....</p>
+                <p class="icbot">15/08/2021 - by: Ego Creative <i class="fas fa-thumbs-up"></i></p>
+            </div>
+            <div class="element">
+                <a href="/new9">
+                    <img src="https://blog.goxanh.vn/wp-content/uploads/muon-kieu-sang-tao-cung-tre-nua-6.jpg"/>
+                    <h3>All Kinds of Creation With Bamboo</h3>
+                </a>
+                <p>Bamboo is the perfect choice if you want to add wood tones to your interior because they soften the atmosphere in your home and make it more comfortable and inviting....</p>
+                <p class="icbot">15/08/2021 - by: Ego Creative <i class="fas fa-thumbs-up"></i></p>
+            </div>
+
+
+
+            <!--      hết thúc element-->
+        </div>
+        <!--    hết content-->
+    </div>
+
+</div>
+<!--kết thúc main-->
 <%- include("footer")%>
 </body>
 </html>

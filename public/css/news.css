@@ -597,8 +597,6 @@ a, .text-link {
     width: 80%;
     float: left;
 }
-
-
 /*------main hot-----*/
 
 .hot_list{
@@ -633,9 +631,7 @@ a, .text-link {
 .content.row {
     height: 100%;
     width: 100%;
-    padding: 50px;
     margin: 50px;
-    margin-top: -30px;
 }
 .content .Content1{
     display: block;
