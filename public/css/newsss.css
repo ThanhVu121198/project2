@@ -573,7 +573,7 @@ a, .text-link {
     float: left;
     width: 100%;
     background: #2d2621;
-    padding: 45px;
+    padding: 45px 0 0 0;
 }
 .row{
     margin-left: -50px;
@@ -760,6 +760,9 @@ a, .text-link {
     .nav {
         display: none;
     }
+    .footer{
+        padding: 45px;
+    }
     .nav_bars-btn{
         display: block;
         font-size: 30px;
@@ -854,7 +857,6 @@ a, .text-link {
         margin-left: -30px ;
     }
     .header .group-account {
-        padding: 0;
         text-align: right;
         display: flex;
         margin: 0;
@@ -866,14 +868,18 @@ a, .text-link {
         left: -70px;
         width: 0;
     }
+    .logo img{
+        width: 170px;
+    }
 }
+
 @media (max-width: 300px) {
     .account_d-none1 .icon {
         display: none;
     }
 
     .header .group-account {
-        padding: 0;
+
         text-align: right;
         display: flex;
         margin: 0;
@@ -1014,6 +1020,12 @@ a, .text-link {
     .element img{
         height: 250px;
     }
+    .footer{
+        padding: 45px;
+    }
+    .logo img{
+        width: 180px;
+    }
 }
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
     .list_product{
@@ -1051,4 +1063,7 @@ a, .text-link {
     .top_list p{
         font-size: 20px;
     }
+}
+.hot_box hr{
+    border-bottom: 3px solid white;
 }
