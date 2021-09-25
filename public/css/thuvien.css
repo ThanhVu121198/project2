@@ -17,6 +17,9 @@ html{
 }
 
 /*---------------HEADER---------------*/
+.nav li a:hover{
+    text-decoration: none;
+}
 .header{
     width: 100%;
     height: 90px;

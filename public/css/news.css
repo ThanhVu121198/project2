@@ -42,6 +42,11 @@ html{
     width: 20%;
     height: 100%;
     background-color: #2d2621;
+    position: relative;
+    left: -100px;
+}
+.nav{
+    margin-left: -70px;
 }
 /*--------------SEACH--------------*/
 .seach{
@@ -56,7 +61,6 @@ html{
     height: 42px;
     background-color: #c89551;
     margin-top: 9px;
-    margin-left: 30px;
 }
 .header_search {
     position: relative;
@@ -657,6 +661,9 @@ a, .text-link {
 }
 .content .col-lg-6{
     padding: 30px;
+}
+.nav li a:hover{
+    text-decoration: none;
 }
 /*------------footer--------------*/
 .footer{
