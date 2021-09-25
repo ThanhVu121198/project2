@@ -2,145 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trending News</title>
+    <title>News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/news_small.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/newsss.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.4-/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4/css/all.css">
 </head>
 <body>
 <!-------------HEADER-------------->
-<%- include("header")%>
+<div class="header">
+    <%- include("header")%>
 
-<%- include("nav")%>
-
-<!------------main--------------->
-<div class="page">
-    <div class="slider_main" style="width: 100% ;height: 400px;background-image: url('http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-4.jpg');float: left;margin-top: 30px ">
-            <h1 style="text-align: center;line-height: 400px;color: #e9e4d0;font-size: 50px;text-transform: capitalize;font-weight: 800 ">News</h1>
-    </div>
-    <div class="container">
-        <div>
-            <div class="row">
-                <div class="col-lg-3 col-12 order-2 order-lg-1">
-                    <div class="aside-item">
-                        <div class="main">
-
-                            <div class="top_list">
-                                <p><b>product list</b></p>
-                            </div>
-                            <div class="list_box">
-                                <a class="name_list"><b>Bat Trang ceramics</b></a>
-                                <ul>
-                                    <li class ="list"><a href="#">Dinner table</a></li>
-                                    <li class="list"><a href="#">Teapot</a></li>
-                                    <li class="list"><a href="#">Worship set</a></li>
-                                    <li class="list"><a href="#">Statue</a></li>
-                                </ul>
-                                <a class="name_list"><b>Lacquer painting</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">Picasso paintings</a></li>
-                                    <li class="list"><a href="#">Calligraphy painting</a></li>
-                                    <li class="list"><a href="#">Lacquer painting</a></li>
-                                    <li class="list"><a href="#">Vietnamese paintings</a></li>
-                                </ul>
-                                <a class="name_list"><b>Model boat</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">Premium model ship</a></li>
-                                    <li class="list"><a href="#">Ancient warship</a></li>
-                                    <li class="list"><a href="#">Wooden sailing boat</a></li>
-                                    <li class="list"><a href="#">Model in bottle</a></li>
-                                </ul>
-                                <a class="name_list"><b>Ha Dong silk</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">Ready-made silk Ao Dai</a></li>
-                                    <li class="list"><a href="#">Men's silk shirt</a></li>
-                                    <li class="list"><a href="#">Embroidery</a></li>
-                                    <li class="list"><a href="#">Scarf</a></li>
-                                </ul>
-                                <a class="name_list"><b>Dai Bai Bronze</b></a>
-                                <ul>
-                                    <li class="list"><a href="#">Premium bronze painting</a></li>
-                                    <li class="list"><a href="#">Bronze Worship Set</a></li>
-                                    <li class="list"><a href="#">Bronze painting</a></li>
-                                    <li class="list"><a href="#">Drums</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="aside-blog">
-                            <div class="hot_list">
-                                <p><b>Related News</b></p>
-                            </div>
-                            <div class="hot_box">
-                                <div class="hot_box1">
-                                    <p>Hoi An opens the 3rd handicraft market night<br>
-                                        <a href="#">See more</a>
-                                        <i class="fas fa-eye"></i></p>
-                                </div>
-                                <hr>
-                                <div class="hot_box1">
-                                    <p>Water hyacinth knitting abroad in Ninh Binh<br>
-                                        <a href="#">See more</a>
-                                        <i class="fas fa-eye"></i></p>
-                                </div>
-                                <hr>
-                                <div class="hot_box1">
-                                    <p>Vietnam house - where the fine arts converge<br>
-                                        <a href="#">See more</a>
-                                        <i class="fas fa-eye"></i></p>
-                                </div>
-                                <hr>
-                                <div class="hot_box1">
-                                    <p>Thien Phu Stone Wood creates a highlight for living space<br>
-                                        <a href="#">See more</a>
-                                        <i class="fas fa-eye"></i></p>
-                                </div>
-                                <hr>
-                                <div class="hot_box1">
-                                    <p>The reason you must go to Hua Hin once<br>
-                                        <a href="#">See more</a>
-                                        <i class="fas fa-eye"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <%- include("nav")%>
+</div>
+<div class="slider_main" style="width: 100% ;height: 400px;background-image: url('http://timbercompany.ancorathemes.com/wp-content/uploads/2016/07/parallax-4.jpg');float: left;margin-top: 30px ">
+    <h1 style="text-align: center;line-height: 400px;color: #e9e4d0;font-size: 50px;text-transform: capitalize">news</h1>
+</div>
+<!--'phan main-->
+<div class="container">
+    <div class="main">
+        <div class="list_product">
+            <div class="top_list">
+                <p ><b>product list</b></p>
+            </div>
+            <div class="list_box">
+                <div class="list_box">
+                    <a class="name_list" href="#"><b>interior</b></a>
+                    <ul>
+                        <li class ="list"><a href="/san-pham1"> wooden tables and chairs</a></li>
+                        <li class="list"><a href="/san-pham2">wooden bed</a></li>
+                        <li class="list"><a href="/san-pham3"> wooden collapset</a></li>
+                        <li class="list"><a href="/san-pham4">wooden cabinets</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>decorations</b></a>
+                    <ul>
+                        <li class="list"><a href="/san-pham5">clock</a></li>
+                        <li class="list"><a href="/san-pham6">jewelry box</a></li>
+                        <li class="list"><a href="/san-pham7">candy box</a></li>
+                        <li class="list"><a href="/san-pham8">tea tray</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>feng shui items</b></a>
+                    <ul>
+                        <li class="list"><a href="/san-pham9">feng shui statue</a></li>
+                        <li class="list"><a href="/san-pham10">feng shui disk</a></li>
+                        <li class="list"><a href="/san-pham11">lucky pot</a></li>
+                        <li class="list"><a href="/san-pham12">feng shui jade</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>bamboo handmade</b></a>
+                    <ul>
+                        <li class="list" href="#"><a href="/san-pham13">Fashion handmade</a></li>
+                        <li class="list" href="#"><a href="/san-pham14">decorative accessories</a></li>
+                        <li class="list"><a href="/san-pham15">Bamboo furniture</a></li>
+                        <li class="list"><a href="/san-pham16">replacing plastic products</a></li>
+                    </ul>
+                    <a class="name_list" href="#"><b>Stone</b></a>
+                    <ul>
+                        <li class="list"><a href="/san-pham17">stone paintings</a></li>
+                        <li class="list"><a href="/san-pham18">stone statue</a></li>
+                        <li class="list"><a href="/san-pham19">Penjing</a></li>
+                        <li class="list"><a href="/san-pham20">accessories</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-9 col-12 order-1 order-lg-2">
-                    <div class="content">
-                        <div  class="Content1"><a href="/new1">
-                            <img src="https://vcdn1-dulich.vnecdn.net/2019/07/14/8-1563078544.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Bl1tPDscA7h1MnqCe727pQ"/>
-                            <h3>Hoi An opens the 3rd handicraft market night</h3>
-                            <p>The new night market is located right next to Hoi An market, operating from 6pm to 11pm every night, selling typical souvenirs of the old town....</p></a>
-                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                <div class="main_hot">
+                    <div class="hot_list">
+                        <p><b>Related News</b></p>
+                    </div>
+                    <div class="hot_box">
+                        <div class="hot_box1">
+                            <p>Hoi An opens the 3rd handicraft market night<br>
+                                <a href="/new1">See more</a>
+                                <i class="fas fa-eye"></i></p>
                         </div>
-
-                        <div  class="Content1"><a href="/new2">
-                            <img src="http://blogcaycanh.vn/uploads/caycanh/1401854096_cay-beo-luc-binh-2.jpg"/>
-                            <h3>Water hyacinth knitting abroad in Ninh Binh</h3>
-                            <p>Water hyacinth stem, through the skillful hands of craftsmen in Kim Son district (Ninh Binh), has become an export fine art product with high economic value.....</p></a>
-                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Water hyacinth knitting abroad in Ninh Binh<br>
+                                <a href="/new2">See more</a>
+                                <i class="fas fa-eye"></i></p>
                         </div>
-
-                        <div  class="Content1"><a href="/new3">
-                            <img src="https://file1.dangcongsan.vn/data/0/images/2020/12/15/kimdung/my-nghe.jpg"/>
-                            <h3>Vietnam house - where the fine arts converge</h3>
-                            <p>50 stalls and 12 miniature production models here represent 12 groups of Vietnamese handicraft villages.Saigon has many favorable conditions for development in all....</p></a>
-                            <p class="icbot">15/08/2021 - by: Ego Creative <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Vietnam house - where the fine arts converge<br>
+                                <a href="/new3">See more</a>
+                                <i class="fas fa-eye"></i></p>
+                        </div>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Travel the world looking for handicrafts<br>
+                                <a href="/new5">See more</a>
+                                <i class="fas fa-eye"></i></p>
+                        </div>
+                        <hr>
+                        <div class="hot_box1">
+                            <p>Learn about handicraft products at Vietnam House<br>
+                                <a href="/new4">See more</a>
+                                <i class="fas fa-eye"></i></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--    phần content-->
+        <div class="content">
+            <div class="element">
+                <a href="/new1">
+                    <img src="https://vcdn1-dulich.vnecdn.net/2019/07/14/8-1563078544.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Bl1tPDscA7h1MnqCe727pQ"/>
+                    <h3>Hoi An opens the 3rd handicraft market night</h3></a>
+                <p>The new night market is located right next to Hoi An market, operating from 6pm to 11pm every night, selling typical souvenirs of the old town....</p>
+                <p class="icbot">15/08/2021 - by: Ego Creative <i class="fas fa-thumbs-up"></i></p>
+            </div>
+            <div class="element">
+                <a href="/new2">
+                    <img src="http://blogcaycanh.vn/uploads/caycanh/1401854096_cay-beo-luc-binh-2.jpg"/>
+                    <h3>Water hyacinth knitting abroad in Ninh Binh</h3></a>
+                <p>Water hyacinth stem, through the skillful hands of craftsmen in Kim Son district (Ninh Binh), has become an export fine art product with high economic value.....</p>
+                <p class="icbot">15/08/2021 - by: Ego Creative <i class="fas fa-thumbs-up"></i></p>
+            </div>
+            <div class="element">
+                <a href="/new3">
+                    <img src="https://file1.dangcongsan.vn/data/0/images/2020/12/15/kimdung/my-nghe.jpg"/>
+                    <h3>Vietnam house - where the fine arts converge</h3></a>
+                <p>50 stalls and 12 miniature production models here represent 12 groups of Vietnamese handicraft villages.Saigon has many favorable conditions for development in all....</p>
+                <p class="icbot">15/08/2021 - by: Ego Creative <i class="fas fa-thumbs-up"></i></p>
+            </div>
+            <!--      hết thúc element-->
+        </div>
+        <!--    hết content-->
     </div>
-</div>
 
-<!-------footer----------->
+</div>
+<!--kết thúc main-->
 <%- include("footer")%>
 </body>
 </html>

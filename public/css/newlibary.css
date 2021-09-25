@@ -4,13 +4,15 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto",sans-serif;
+    /*vertical-align: middle;*/
 }
 body{
     font-size: 14px;
     color: #554f4f;
     overflow-x: hidden;
     width: 100%;
-    height: 1500px;
+    height: auto;
+    background-color: #e9e4d0;
 }
 html{
     font-family: "Roboto",sans-serif;
@@ -555,172 +557,23 @@ a, .text-link {
         display: none;
     }
     .logo{
-        margin-left: -60px ;
 
     }
 }
 
-
-/* -------- MAIN -------*/
-.page{
-    margin-top: -30px;
+.slider_main{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
-.main{
-    width: 60%;
-    float: none;
-    margin-right: auto;
-}
-.list_product{
-    margin-top:5px;
-    float: left;
-    width: 19%;
-}
-.top_list{
-    text-transform: uppercase;
-    width: 280px;
-    height: 50px;
-    background-color: #c89551;
-}
-.list_box{
-    width: 280px;
-    height: 100%;
-    margin: auto;
-}
-.top_list p{
-    width: 280px;
-    padding-left: 10px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
-.name_list{
-    text-align: left;
-    text-transform: capitalize;
-    font-size: 22px;
-    padding: 10px;
-}
-.list{
-    font-size: 15px;
-    text-align: left;
-}
-.list :hover{
-    color: red;
-}
-.content{
-    margin-top: 20px;
-    width: 80%;
-    float: left;
-}
-/*--- nguồn trang ---*/
-#sour{
-    margin-top: 20px;
-}
-#sour .breadcrumb {
-    background-color: #e9e4d0;
-    margin-left: 30px;
-}
-#sour .breadcrumb strong{
-    color: #c89551;
-}
-#sour .breadcrumb .g{
-    padding: 0 5px;
-}
-#sour a{
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/*------main hot-----*/
-.main{
-    width: 250px;
-    float: none;
-    margin-top: 20px;
-    margin-right: auto;
-}
-.hot_list{
-    text-transform: uppercase;
-    width: 280px;
-    height: 50px;
-    background-color: #c89551;
-}
-.hot_list p{
-    width: 280px;
-    padding-left: 10px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
-.hot_box{
-    margin: 10px;
-}
-.hot_box1 p{
-    font-weight: bold;
-    font-size: 15px;
-    text-align: left;
-}
-.hot_box1 a{
-    font-size: 13px;
-}
-.hot_box1 i{
-    color: #c89551;
-}
-/*---right---*/
-
-#name h2{
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-}
-.col-lg-3{
-    margin-top: 20px;
-}
-.col-lg-3 .aside-item{
-    margin-top: -10px;
-}
-.col-lg-9 p{
-    font-size: 15px;
-    text-align: justify;
-    margin: 20px 0px;
-}
-.col-lg-9 .noidung img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.col-lg-9 #author{
-    color: #0f75bc;
-    font-size: 13px;
-    font-style: oblique;
-    font-weight: bold;
-}
-.col-lg-9 .save a{
-    font-size: 16px;
-    color: white;
-    border: 1px solid #c89551;
-    border-radius: 15px;
-    padding: 5px;
-    background-color: #c89551;
-}
-.col-lg-9 .share p{
-    font-size: 16px;
-    font-weight: bold;
-}
-.col-lg-9 .share a{
-    color: #c89551;
-    font-size: 30px;
-    padding: 10px;
-}
-.col-lg-9 .noidung p b{
-    font-size: 20px;
-}
-
-/*------------footer--------------*/
 .footer{
+    float: left;
     width: 100%;
     background: #2d2621;
-    padding: 45px 0 0;
+    padding: 45px 0 0 0;
 }
 .row{
     margin-left: -50px;
@@ -894,6 +747,9 @@ a, .text-link {
     display: none;
 }
 /*-------Responsive Mobile---------*/
+.btn {
+    background-color: white;
+}
 .bottom-nav-bar-mobile{
     display: none;
 }
@@ -903,6 +759,9 @@ a, .text-link {
 @media (max-width: 991px){
     .nav {
         display: none;
+    }
+    .footer{
+        padding: 45px;
     }
     .nav_bars-btn{
         display: block;
@@ -994,11 +853,10 @@ a, .text-link {
         display: none;
     }
     .logo > img{
-        margin-top: -30px;
-        margin-left: 4px;
+        margin-top: -32px ;
+        margin-left: -30px ;
     }
     .header .group-account {
-        padding: 0;
         text-align: right;
         display: flex;
         margin: 0;
@@ -1010,18 +868,24 @@ a, .text-link {
         left: -70px;
         width: 0;
     }
+    .logo img{
+        width: 170px;
+    }
 }
-@media (max-width: 300px){
-    .account_d-none1 .icon{
+
+@media (max-width: 300px) {
+    .account_d-none1 .icon {
         display: none;
     }
+
     .header .group-account {
-        padding: 0;
+
         text-align: right;
         display: flex;
         margin: 0;
         padding-left: 193px;
     }
+
     .seach {
         position: relative;
         top: 63px;
@@ -1030,5 +894,170 @@ a, .text-link {
     }
 }
 
+/*main*/
+.main{
+    margin-top:100px;
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.list_product{
+    margin-top:20px;
+    float: left;
+    width: 20%;
+}
+.slider_main h1{
+    font-weight: 800;
+}
+.top_list{
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    background-color: #57371f;
+}
+.top_list p{
+    padding-left: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #eead5a;
+}
+.name_list{
+    text-align: left;
+    font-size: 22px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.name_list:hover{
+    text-decoration: none;
+}
+.list{
+    font-size: 15px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.list :hover{
+    color: #ffc986;
+}
+.main_hot{
+    width: 100%;
+    float: left;
+}
+.hot_list{
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    background-color: #57371f;
+}
+.hot_list p{
+    width: 100%;
+    padding-left: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #eead5a;
+}
+.hot_box{
+    margin: 10px;
+}
+.hot_box1 p{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+.hot_box1 a{
+    font-size: 13px;
+}
+.content{
+    margin-top: 20px;
+    width: 80%;
+    float: left;
+    padding-left:30px;
+}
+.element{
+    width: 100%;
+    padding-top: 30px;
+    display: table;
+}
+.title{
+    text-transform:capitalize;
+    text-align: left;
+}
+.img_element{
+    width: 33%;
+    float: left;
+    height: 250px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
 
-
+@media only screen and (max-width:739px){
+    .slider_main{
+        display: none;
+    }
+    .list_product{
+        display: none;
+    }
+    .footer{
+        padding: 45px;
+    }
+    .logo img{
+        width: 180px;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+    }
+    .img_element{
+        width: 50%;
+        height: 100px;
+    }
+    .title_library h1{
+        font-size: 30px;
+    }
+    .title{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .list_product{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        height: auto;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+    }
+    .element{
+        width: 100%;
+        padding:20px;
+    }
+    .element h3{
+        font-size: 20px;
+    }
+    .element img{
+        height: 250px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .main{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .hot_list b{
+        font-size: 20px;
+    }
+    .top_list p{
+        font-size: 20px;
+    }
+}
+.hot_box hr{
+    border-bottom: 3px solid white;
+}

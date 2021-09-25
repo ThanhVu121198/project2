@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     height: auto;
-    background-color: #f8f2e8;
+    background-color: #e9e4d0;
 }
 html{
     font-family: "Roboto",sans-serif;
@@ -154,7 +154,7 @@ html{
 }
 .header_search .keys .listkey a:hover{
     background-color: #b18857;
-    color: #ffffff;
+    color: #d0d0d0;
 }
 
 /*--------------TƯ VẤN------------------*/
@@ -592,9 +592,6 @@ a, .text-link {
 .hot_box{
     margin: 10px;
 }
-.hot_box hr{
-    border-bottom: 3px solid white;
-}
 .hot_box1 p{
     font-weight: bold;
     font-size: 15px;
@@ -647,9 +644,6 @@ a, .text-link {
 }
 .name_product{
     margin-top: 310px;
-}
-.btn {
-    background-color: white;
 }
 .name_product H4{
     font-size: 20px;
