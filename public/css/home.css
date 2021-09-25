@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     height: 1500px;
-    background-color: #e9e4d0;
+    background-color: #f8f2e8;
 }
 html{
     font-family: "Roboto",sans-serif;
@@ -582,7 +582,7 @@ a, .text-link {
     height: 4400px;
     position: relative;
     z-index: 1;
-    background-color: #e9e4d0;
+    background-color: #f8f2e8;
 }
 .product_new > .container{
     width: 100%;
@@ -614,7 +614,7 @@ a, .text-link {
     margin-top: 110px;
     position: relative;
     z-index: 1;
-    background-color: #e9e4d0;
+    background-color: #f8f2e8;
 }
 .image_box img {
     width: 100%;
@@ -1505,7 +1505,7 @@ a, .text-link {
 .slider{
     width: 110%;
     height: 100px;
-    background-color: #e9e4d0 ;
+    background-color: #f8f2e8;
     display: flex;
     margin-left: -40px;
 
@@ -2110,7 +2110,7 @@ a, .text-link {
     }
 }
 .cooperate{
-   background-color: #e9e4d0;
+    background-color: #f8f2e8;
 }
 
 

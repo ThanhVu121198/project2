@@ -11,7 +11,7 @@ body{
     color: #554f4f;
     overflow-x: hidden;
     width: 100%;
-    height: 1500px;
+    height: 1425px;
 }
 html{
     font-family: "Roboto",sans-serif;
@@ -43,6 +43,8 @@ html{
     width: 20%;
     height: 100%;
     background-color: #2d2621;
+    position: relative;
+    left: -90px;
 }
 /*--------------SEACH--------------*/
 .seach{
@@ -51,6 +53,8 @@ html{
     display: flex;
     flex-direction: row;
     background-color: #2d2621;
+    position: relative;
+    left: -10px;
 }
 .seach_box{
     width: 425px;
@@ -177,6 +181,9 @@ html{
 .tuvan > a:hover{
     color: #820000;
 }
+.header .tuvan p{
+    font-weight: 900;
+}
 
 /*--------------account---------------*/
 
@@ -249,6 +256,9 @@ a, .text-link {
 }
 .nav li{
     position: relative;
+}
+.nav {
+    margin-left: -60px;
 }
 .subnav{
     opacity: 0; visibility: hidden; top: 150%; transition: all 0.5s ease-in-out;
@@ -566,7 +576,7 @@ a, .text-link {
 /*--------------main-------------*/
 .main {
     z-index: 2;
-    background-color: #e9e4d0;
+    background-color: #f8f2e8;
 }
 .main .bread-crumb {
     padding: 15px 0;
@@ -608,7 +618,7 @@ a, .text-link {
 .aside-blog .blog-list .loop-blog{
     overflow: hidden;
     padding: 10px 0;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 3px solid #ffffff;
 }
 .aside-item .navbar-pills{
     padding: 0;
@@ -688,7 +698,12 @@ a, .text-link {
     text-decoration: none;
     font-weight: 600;
 }
-
+.nav a{
+    text-decoration: none;
+}
+.title-block a{
+    text-decoration: none;
+}
 
 
 /*------------footer--------------*/
@@ -696,6 +711,8 @@ a, .text-link {
     width: 100%;
     background: #2d2621;
     padding: 45px 0 0;
+    position: relative;
+    top: -47px;
 }
 .row{
     margin-left: -50px;
