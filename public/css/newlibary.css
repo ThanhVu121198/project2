@@ -18,6 +18,7 @@ html{
     font-family: "Roboto",sans-serif;
 }
 
+
 /*---------------HEADER---------------*/
 .nav li a:hover{
     text-decoration: none;
@@ -47,11 +48,9 @@ html{
     width: 20%;
     height: 100%;
     background-color: #2d2621;
-    position: relative;
-    left: -100px;
 }
-.nav{
-    margin-left: -80px;
+.logo>img{
+    margin-left: -30px;
 }
 /*--------------SEACH--------------*/
 .seach{
@@ -66,6 +65,7 @@ html{
     height: 42px;
     background-color: #c89551;
     margin-top: 9px;
+    margin-left: 30px;
 }
 .header_search {
     position: relative;
@@ -862,8 +862,10 @@ a, .text-link {
     .logo > img{
         margin-top: -32px ;
         margin-left: -30px ;
+        width: 180px;
     }
     .header .group-account {
+        padding: 0;
         text-align: right;
         display: flex;
         margin: 0;
@@ -875,18 +877,14 @@ a, .text-link {
         left: -70px;
         width: 0;
     }
-    .logo img{
-        width: 170px;
-    }
 }
-
 @media (max-width: 300px) {
     .account_d-none1 .icon {
         display: none;
     }
 
     .header .group-account {
-
+        padding: 0;
         text-align: right;
         display: flex;
         margin: 0;
@@ -900,7 +898,6 @@ a, .text-link {
         width: 0;
     }
 }
-
 /*main*/
 .main{
     margin-top:100px;
@@ -1064,6 +1061,9 @@ a, .text-link {
     }
     .top_list p{
         font-size: 20px;
+    }
+    .list_product{
+        margin-left: 0;
     }
 }
 .hot_box hr{
