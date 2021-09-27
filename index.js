@@ -21,6 +21,7 @@ app.get("/question",function (req,res) {
     res.render("question");
 });
 
+
 app.get("/video",function (req,res) {
     res.render("video");
 });
@@ -159,7 +160,7 @@ var config = { // thong tin may chu
     server: "localhost",
     user:"sa",
     password:"sa123",
-    database:"doan2",
+    database:"Data",
     stream: false,
     port:1433,
     options: {
@@ -173,9 +174,9 @@ var ConnectionConfig = {
     server: 'localhost',
     authentication: {
         type: 'default',
-        options: { userName: 'sa', password: 'sa123',database:"doan2"}
+        options: { userName: 'sa', password: 'sa123'}
     },
-
+    database:"Data",
     options: { encrypt:false }};
 
 mssql.connect(ConnectionConfig,function (err){
